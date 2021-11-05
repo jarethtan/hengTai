@@ -1,0 +1,18 @@
+<% layout('boilerplate') -%>
+
+<%- include('./partial/navBar.ejs') %> 
+
+<%- include('./partial/flash.ejs') %>
+
+    <div class="card errorCard text-dark bg-light col-md-4 offset-md-4">
+      <div class="card-header text-center">
+        <h5><%= err.message %></h5>
+      </div>
+      <% if (process.env.NODE_ENV !== 'production') { %> 
+      <div class="card-body">        
+          <p class="card-text"><%= err.stack %></p>
+      </div>
+      <% } %> 
+    </div>
+
+<%- include('./partial/footer.ejs') %> 

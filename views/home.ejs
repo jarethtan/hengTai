@@ -1,0 +1,55 @@
+<% layout('boilerplate') -%> 
+
+<main class="container col-12 homeContainer"> 
+    <div class="row">
+        <div id="homeCarousel" class="carousel slide col-lg-12 homeCarousel" data-bs-ride="carousel" data-bs-interval='false'>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                            <img src='https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,q_100,w_1000/v1635976186/Heng%20Thai/qv0jwyd8yuumcbqpedr4.jpg' class="col-md-12 carouImage" alt="...">
+                            <div class="carouTextActive">
+                            <a href="/login">
+                                <img src="/images/HTlogo.png" alt="" class="carouLogo">
+                            </a>
+                            <h5 class="title">WELCOME TO HENG THAI</h5>
+                            <p class="blockquote-footer slogan">Serving Brunei Since 1990</p>
+                            <p class="subheader">One of Brunei's most trusted and respected developer with over 60 projects around the country since 1990.</p>
+                            <p class="content">View our projects here</p>
+                            <a href="/properties"><button type="button" class="carouButton">View Projects</button></a>
+                            <p class="carouFooter">&copy; Heng Thai 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <% if (carousels.length >= 1) { %> 
+                <% for (let i=0; i<carousels.length; i++) { %> 
+                <div class="carousel-item">
+                    <div class="row">
+                            <img src="<%= carousels[i].image.url %>" class="col-md-12 carouImage" alt="...">
+                        <div class="carouText">
+                            <a href="/login">
+                                <img src="/images/HTlogo.png" alt="" class="carouLogo"> 
+                            </a>
+                            <h5 class="title"><%= carousels[i].title%></h5>
+                            <p class="subheader"><%= carousels[i].subheader %></p>
+                            <p class="content"><%= carousels[i].content %></p>
+                            <p class="carouFooter">&copy; Heng Thai 2021</p>
+                        </div>
+                        <% if (currentUser) { %> 
+                        <button type="button" class=" carouEdit btn btn-info"><a href="/home/<%= carousels[i]._id %>/edit" class=" text-decoration-none text-reset">Edit</a></button>
+                        <% } %> 
+                    </div>
+                </div>
+                <% } %> 
+                <% } %> 
+            </div>
+            <% if (carousels.length >= 1) { %> 
+            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+            <% } %> 
+        </div>
+    </div>
+</main>

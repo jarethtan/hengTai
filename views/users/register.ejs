@@ -1,0 +1,51 @@
+<% layout('boilerplate') -%>
+<%- include('../partial/navBar.ejs') %> 
+
+<main class="container mt-5 pt-5"> 
+    <%- include('../partial/flash.ejs') %> 
+
+<div>
+    <h1>Register Form</h1>
+    <div class="col-md-4 offset-md-4">
+        <div  class="shadow-sm p-3 mb-5 bg-body rounded">
+            <form action="/register" novalidate class="validateForm" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Username</label>
+                    <input type="text" name="username" class="form-control" id="username" placeholder="3 to 10 characters long" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please input a username that is 3 to 10 characters long.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="6 to 12 characters long" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please input a password that is 6 to 12 characters long.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Format [xxx@xx.com or xxx@xx.net]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please input an email.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Register</button>
+                <a class="btn btn-secondary mb-3" href="/properties" role="button">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<%- include('../partial/footer.ejs') %> 

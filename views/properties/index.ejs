@@ -1,0 +1,93 @@
+<% layout('boilerplate') -%>
+<%- include('../partial/navBar.ejs') %> 
+<main class="container col-12 mt-5 pt-5"> 
+  <%- include('../partial/flash.ejs') %> 
+
+      <div>
+        <button id="btnScrollUp">
+          <span class="material-icons md-48">arrow_upwards</span>
+        </button>
+          <div>
+            <h1 class="indexTitle">HENG THAI PROJECT ARCHIVE</h1>
+            <div class="mx-5">
+              <div id="cluster-Map" class="indexMap col-md-12"></div>
+            </div>
+                <div>
+                  <div class="card searchCard col-sm-10 offset-sm-1">
+                  <h5 class="offset-sm-1 col-sm-10">Search for a Property<span>(Choose only ONE search field)</span></h5>
+                    <form action="/properties?_method=SEARCH" method="POST" novalidate class="searchForm">
+                      <div>
+                        <div class="card card-body">
+                          <div class="row">
+                            <div class="col-sm-1">
+                              <input type="checkbox" class="checkBox" id="checkbox">
+                            </div>
+                            <div class="col-sm-10">
+                              <input type="text" id="inputField" name="search" class="form-control shadow-sm" placeholder="Search for: Name / Location / Property Type" disabled>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        <% for (let i=0; i<arrayProp.length; i++) { %> 
+                          <div class="collapse multi-collapse" id="propSearch">
+                            <div class="card card-body">
+                              <div class="row">
+                                <div class="col-sm-1">
+                                  <input type="checkbox" class="checkBox" id="checkbox<%= i %>">
+                                </div>
+                                <div class="col-sm-10">
+                                  <input type="text" id="inputField<%= i %>" name=<%= arrayProp[i] %> class="form-control shadow-sm" placeholder='<%= arrayTitle[i] %>' disabled>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <% } %>
+                        <div class="col-sm-10 offset-sm-1 searchBar">
+                          <a class="btn btn-primary searchField" data-bs-toggle="collapse" href="#propSearch" role="button" aria-expanded="false" aria-controls="propSearch">Other Field Type</a>
+                          <button type="submit" class="btn btn-primary searchButton">Search</button>
+                        </div>           
+                    </form>
+                  </div>
+                </div>
+              <div>
+                <div class="row col-md-12 m-0" style="justify-content: center;">
+                <% for(let i=0; i<properties.length; i++) {%> 
+
+                    <div class="card indexCard col-md-3" style="width: 350px;">
+                      <a href="/properties/<%= properties[i]._id %> " class="text-decoration-none text-reset">
+                      <% if (properties[i].images.length) { %> 
+                        <img src="<%= properties[i].images[0].url %>" class="mt-3 img-fluid rounded-start indexImg" alt="...">
+                      <% } else { %> 
+                        <img src='https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:wp5hzlsxuikx2rixqjyx,w_830/v1635916633/Heng%20Thai/wp5hzlsxuikx2rixqjyx.jpg' class="img-fluid rounded-start indexImg" alt="...">
+                      <% } %>
+                      <div class="card-body p-2">
+                        <h5 class="card-title"> <%= i+1 %>. <%= properties[i].name %></h5>
+                        <p class="card-text mb-2"> Year Built: <%= properties[i].year %></p>
+                        <p class="card-text mb-2"> Property Type: <%= properties[i].propertyType %></p>
+                      </div>
+                    </a>
+                    </div>
+
+                <% } %>
+              </div>
+            </div>            
+          </div>
+      </div>
+
+<script>
+    const mapToken = '<%-process.env.MAPBOX_TOKEN%>';
+    const properties =  {features: <%- JSON.stringify(properties) %>}
+</script>
+
+<script type="text/javascript" src="/javascripts/clusterMap.js"></script>
+
+<script type="text/javascript" src="/javascripts/scrollUpBtn.js"></script>
+
+<script type="text/javascript" src="/javascripts/checkbox.js"></script> <%#  the number '2' in the js file checkbox stated matches the number of properties we want to search in the searchbar in this page. there are a total of 5 but the extra 1 uses text index from mongo to search. so it is not included in the array. %>
+
+</main>
+
+<%- include('../partial/footer.ejs') %> 
+
+
+

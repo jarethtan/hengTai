@@ -1,0 +1,136 @@
+<% layout('boilerplate') -%>
+<%- include('../partial/navBar.ejs') %> 
+
+<main class="container mt-5 pt-5 propNew"> 
+    <%- include('../partial/flash.ejs') %> 
+
+        <div>
+        <h1>New Property</h1>
+        <div class="card propNewCard py-2 col-md-6 offset-md-3">
+            <form method="POST" novalidate class="validateForm" action="/properties" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Property Name</label> <br>
+                    <input type="text" name="name" class="form-control shadow-sm" id="name" placeholder="Property Name" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please provide a property name.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <label for="year" class="form-label">Completion Year</label>
+                        <input type="number" name="year" class="form-control shadow-sm" id="year" placeholder="YYYY" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please specify a year between 1990 - 2030.
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="units" class="form-label">No. of Units Built</label>
+                        <input type="number" name="units" class="form-control shadow-sm" id="units" placeholder="XXX" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please specify a number not more than 150.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" name="location" class="form-control shadow-sm" id="location" placeholder="Address" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please provide an address.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-3";>
+                        <label for="status" class="form-label selector-label">Status</label><br>
+                        <select class="form-select selector-dropdown-1 shadow-sm" name="status" aria-label="Default select" id="status" required>
+                            <option selected></option>
+                            <option value="Completed">Completed</option>
+                            <option value="In-Progress">In-Progress</option>
+                        </select>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide property status.
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-3">
+                        <label for="bedroom" class="form-label">Bdrms</label>
+                        <input type="text" name="bedroom" class="form-control bdrm-btrm shadow-sm" id="bedroom" placeholder="XX" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide no. of bedrooms.
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-3">
+                        <label for="bathroom" class="form-label">Bthrms</label>
+                        <input type="text" name="bathroom" class="form-control bdrm-btrm shadow-sm" id="bathroom" placeholder="XX" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide no. of bathrooms.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-3">
+                        <label for="images" class="form-label">Choose Up to FOUR Image(s)</label>
+                        <input type="file" name="images" class="form-control-file" id="images" multiple>
+                    </div>
+                    <div class="col-lg-6 mb-3";>
+                        <label for="propertyType" class="form-label selector-label">Property Type</label><br>
+                        <select class="form-select selector-dropdown-2 shadow-sm" name="propertyType" aria-label="Default select" id="propertyType" required>
+                            <option selected></option>
+                            <option value="Residential Bungalow">Residential Bungalow</option>
+                            <option value="Residential Detached House">Residential Detached House</option>
+                            <option value="Apartment Building">Apartment Building</option>
+                            <option value="Commerical Shophouses">Commerical Shophouses</option>
+                            <option value="Commerical Shopping Mall">Commerical Shopping Mall</option>
+                        </select>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please specify Property type.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Property Description and History</label>
+                    <textarea name="description" class="form-control shadow-sm" id="description" rows="5" placeholder="Description" required></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please provide description of property.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Create</button>
+                <a class="btn btn-secondary mb-3" href="/properties" role="button">Cancel</a>
+            </form>
+        </div>
+    </div>
+</main>
+
+<%- include('../partial/footer.ejs') %> 
+
+
+
+
+
+
+

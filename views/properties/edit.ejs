@@ -1,0 +1,148 @@
+<% layout('boilerplate') -%>
+
+<%- include('../partial/navBar.ejs') %> 
+<main class="container mt-5 pt-5 propEdit"> 
+    <%- include('../partial/flash.ejs') %> 
+
+    <div>
+        <h1>Edit Property</h1>
+        <div class="card propEditCard pt-2 col-md-6 offset-md-3">
+            <form action="/properties/<%= property._id %>?_method=PUT" method="POST" novalidate class="validateForm" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Property Name</label> <br>
+                    <input type="text" name="name" class="form-control shadow-sm" id="name" value="<%= property.name %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please provide a property name.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <label for="year" class="form-label">Completion Year</label> <br>
+                        <input type="number" name="year" class="form-control shadow-sm" id="year" value="<%= property.year %>" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Year must be 1990 to 2030.
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="units" class="form-label">No. of Units Built</label>
+                        <input type="number" name="units" class="form-control shadow-sm" id="units" value="<%= property.units %>" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please specify a number not more than 150.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label> <br>
+                    <input type="text" name="location" class="form-control shadow-sm" id="location" value="<%= property.location %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please provide an address
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-3";>
+                        <label for="status" class="form-label selector-label">Status</label><br>
+                        <select class="form-select selector-dropdown-1 shadow-sm" name="status" aria-label="Default select" id="status" required>
+                            <option value="Completed" <%= property.status === "Completed" ? 'selected' : '' %>>Completed</option>
+                            <option value="In-Progress" <%= property.status === "In-Progress" ? 'selected' : '' %>>In-Progress</option>
+                        </select>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide property status.
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-3">
+                        <label for="bedroom" class="form-label">Bdrms</label>
+                        <input type="text" name="bedroom" class="form-control bdrm-btrm shadow-sm" id="bedroom" value="<%= property.bedroom %>" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide no. of bedrooms
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-3">
+                        <label for="bathroom" class="form-label">Bthrms</label>
+                        <input type="text" name="bathroom" class="form-control bdrm-btrm shadow-sm" id="bathroom" value="<%= property.bathroom %>" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide no. of bathrooms
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <% if (property.images.length < 4) { %> 
+                    <div class="mb-3 col-lg-6">
+                        <label for="images" class="form-label">Choose up to <%= 4 - property.images.length %> Image(s)</label>
+                        <input type="file" name="images" class="form-control-file" id="images" multiple>
+                    </div>
+                    <% } else { %> 
+                        <div class="mb-3 col-lg-6"></div>
+                    <% } %> 
+                    <div class="mb-3 col-lg-6";>
+                        <label for="propertyType" class="form-label selector-label">Property Type</label><br>
+                        <select class="form-select selector-dropdown-2" name="propertyType" aria-label="Default select" id="propertyType" required>
+                            <option value="Residential Bungalow" <%= property.propertyType === "Residential Bungalow" ? 'selected' : '' %>>Residental Bungalow</option>
+                            <option value="Residential Detached House" <%= property.propertyType === "Residential Detached House" ? 'selected' : '' %>>Residental Detach House</option>
+                            <option value="Apartment Building" <%= property.propertyType === "Apartment Building" ? 'selected' : '' %>>Apartment Building</option>
+                            <option value="Commerical Shophouses" <%= property.propertyType === "Commerical Shophouses" ? 'selected' : '' %>>Commerical Shophouses</option>
+                            <option value="Commerical Shopping Mall" <%= property.propertyType === "Commerical Shopping Mall" ? 'selected' : '' %>>Commerical Shopping Mall</option>
+                        </select>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please specify Property type.
+                        </div>
+                    </div>
+                </div>
+                <div class="my-2">
+                    <label class="form-label">Select Image(s) to Modify/Delete</label>
+                        <div class="row">
+                        <% for (let i = 0; i<property.images.length; i++) { %> 
+                            <div class="col-md-3">
+                                <div class="custom-control custom-checkbox image-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="deleteImages[]" id="image<%=i%>" value="<%= property.images[i].filename %>">
+                                    <label class="custom-control-label" for="image<%=i%>">
+                                        <img src="<%= property.images[i].url %>" alt="#" class="img-fluid img-thumbnail">
+                                    </label>
+                                </div>
+                            </div>
+                        <% } %> 
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Property Description and History</label> <br>
+                    <textarea name="description" class="form-control shadow-sm" id="description" rows="5" required><%= property.description %></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Field cannot be empty.
+                    </div>
+                </div>
+                    <button type="Update" class="btn btn-info mb-3">Update</button>
+                    <a class="btn btn-secondary mb-3" href=/properties/<%=`${property._id}`%> role="button">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</main>
+
+<%- include('../partial/footer.ejs') %> 

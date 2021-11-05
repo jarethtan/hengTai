@@ -1,0 +1,62 @@
+<% layout('boilerplate') -%>
+<%- include('../partial/navBar.ejs') %> 
+
+<main class="container mt-5 pt-5"> 
+    <%- include('../partial/flash.ejs') %> 
+
+        <div>
+        <h1>Edit Carousel</h1>
+        <div class="carouEditCard card py-2 col-md-6 offset-md-3">
+            <form action="/home/<%= carousel._id %>/edit?_method=PUT" method="POST" novalidate class="validateForm carouEditForm" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title of Carousel</label>
+                    <input type="text" name="title" class="form-control shadow-sm" id="title" placeholder="Title" value="<%= carousel.title %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please choose a Title.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="subheader" class="form-label">Carousel Subheader</label>
+                    <textarea name="subheader" class="form-control shadow-sm" id="subheader" rows="3"><%= carousel.subheader %></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="content" class="form-label">Carousel Content</label>
+                    <textarea name="content" class="form-control shadow-sm" id="content" rows="5"><%= carousel.content %></textarea>
+                <div class="my-3">
+                    <label for="image" class="form-label">Choose Image</label>
+                    <input type="file" name="image" class="form-control-file" id="image">
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="my-3">
+                    <label class="form-label" for="image 1">Select Image to Modify/Delete</label>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="custom-control custom-checkbox image-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="deleteImage" id="image 1" value="<%= carousel.image.filename %>">
+                                    <label class="custom-control-label" for="image 1">
+                                        <img src="<%= carousel.image.url %>" alt="#" class="img-fluid img-thumbnail">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <button type="submit" class="btn btn-primary mb-3">Update</button>
+                <a class="btn btn-secondary mb-3 carouCancelEdit" href="/home" role="button">Cancel</a>
+            </form>
+            <form action="/home/<%= carousel._id %>/edit?_method=DELETE" method="POST">
+                <button class="btn btn-danger carouDelete">Delete</button>
+            </form>
+        </div>
+    </div>
+
+</main>
+
+<%- include('../partial/footer.ejs') %> 
+
+
+

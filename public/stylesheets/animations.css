@@ -1,0 +1,117 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-25px); 
+        filter: blur(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+      transform: translateX(-200px) scale(0.4);
+    }
+    to {
+      transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes slideRight {
+    from {
+      transform: translateX(500px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+}
+
+@keyframes slideTop {
+    from {
+      transform: translateY(-500px) scale(0.4);
+    }
+    to {
+      transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes slideBottom {
+    from {
+      transform: translateY(500px) scale(0.4);
+    }
+    to {
+      transform: translateY(0px) scale(1);
+    }
+}
+
+/******************************************************* Main Animation ********************************************************/
+
+main {
+    animation: transitionIn 1.2s;
+}
+
+/******************************************************* Home Animation ********************************************************/
+
+.carouTextActive .carouLogo {
+    animation: slideTop 2.0s ease-in-out;
+}
+
+.carouTextActive .title {
+    animation: slideLeft 1.5s ease-in-out;
+}
+
+.carouTextActive .slogan {
+    animation: slideLeft 1.5s ease-in-out;
+}
+
+.carouTextActive .subheader {
+    animation: slideLeft 1.5s ease-in-out;
+}
+
+.carouTextActive .content {
+    animation: slideLeft 1.5s ease-in-out;
+}
+
+.carouTextActive button {
+    animation: slideBottom 1.7s ease-in-out;
+}
+
+.carouText .carouLogo {
+    animation: slideTop 2.0s ease-in-out;
+}
+
+.carouText .title {
+    animation: slideLeft 1.5s ease-in-out;
+}
+
+.carouText .subheader {
+    animation: slideLeft 1.5s ease-in-out;
+}
+
+.carouText .content {
+    animation: slideLeft 1.5s ease-in-out;
+}
+
+/******************************************************* Show Animation ********************************************************/
+
+.showTitle {
+    animation: slideTop 1.0s ease-in-out;
+}
+
+.showCard {
+    animation: slideLeft 1.0s ease-in-out;
+}
+
+.showDescriptionCard {
+    animation: slideBottom 1.0s ease-in-out;
+}
+
+.showMapCard {
+    animation: slideRight 1.0s ease-in-out;
+}
+
+.showInfoCard {
+    animation: slideBottom 1.0s ease-in-out;
+}

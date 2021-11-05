@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand py-0" href="/home">
+          <img src="/images/HTlogo.png" alt="" class="navImage align-top">
+          <span class="navName">
+            HENG THAI
+          </span>
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <div class="navbar-nav me-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(2, 82, 2)" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(2, 82, 2)" href="/properties">Properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(2, 82, 2)" href="/properties/new">Add Property</a>
+          </li>
+          <% if (currentUser) { %> 
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(2, 82, 2)" href="/home/carouselForm">Add Carousel</a>
+          </li>
+          <% } %> 
+          <% if (currentUser) { %> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: rgb(2, 82, 2)" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Info
+            </a>
+            <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" style="color: rgb(2, 82, 2)" href="/aboutUs">About Us</a></li>
+              <li><a class="dropdown-item" style="color: rgb(2, 82, 2)" href="/contactUs">Contact Us</a></li>
+            </ul>
+          </li>
+          <% } else { %> 
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(2, 82, 2)" href="/aboutUs">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(2, 82, 2)" href="/contactUs">Contact Us</a>
+          </li>
+          <% } %> 
+        </div>
+        <div class="navbar-nav me-auto mb-lg-0 ml-auto">
+          <% if (!currentUser) { %> 
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(2, 82, 2)" href="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(2, 82, 2)" href="/register">Register</a>
+          </li>
+          <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(2, 82, 2)" href="/logout">Logout</a>
+          </li>
+          <% } %> 
+        </div>
+      </div>
+    </div>
+</nav>
+

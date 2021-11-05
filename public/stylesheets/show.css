@@ -1,0 +1,213 @@
+/**************************************************  Show page styling **************************************************/
+
+.paraBlock {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    perspective: 2px;
+}
+
+h4 {
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.showTitle {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 40px;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 3.8rem;
+    border: 1px solid rgb(138, 129, 118);
+    color: rgb(7, 78, 7);
+    font-weight:500;
+    word-spacing: 2px;
+    padding: 10px 30px 10px 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+    box-shadow: 10px 10px 5px #ccc; 
+}
+
+.showCard {
+    padding: 15px;
+    border: 1px solid rgb(138, 129, 118);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px #ccc; 
+}
+
+.showDescriptionCard {
+    position: relative;
+    height:fit-content;
+    border: 1px solid rgb(138, 129, 118);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+.showMapCard {
+    position: relative;
+    border: 1px solid rgb(138, 129, 118);
+    border-radius: 30px;
+    height: 300px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+.showInfoCard {
+    position: relative;
+    border: 1px solid rgb(138, 129, 118);
+    border-radius: 30px;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+.showInfoCard .logo {
+    padding-bottom: 8px;
+}
+
+.showBedroomLogo {
+    position: relative;
+    bottom: 1.5px;
+    margin: 0;
+    width: 1.6rem;
+    height: 1.7rem;
+}
+
+.showBathroomLogo {
+    position: relative;
+    bottom: 3px;
+    margin: 0;
+    width: 1.5rem;
+    height: 1.6rem;
+}
+
+.userButtons {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.userButtons button {
+    border-radius: 9px;
+}
+
+@media screen and (max-width: 1370px) {
+    .showMapCard {
+        height: 275px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .showDescriptionCard {
+        padding: 15px 15px 15px 15px;
+        line-height: 25px;
+    }
+    .showMapCard {
+        height: 206px;
+    }
+    .showTitle {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .showPage {
+        height: 100%;
+    }
+    .showDescriptionCard {
+        padding: 10px 15px 15px 5px;
+        line-height: 25px;
+    }
+    .showMapCard {
+        height: 255px;
+    }
+    .showTitle {
+        font-size: 2.3rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .showMapCard {
+        margin-bottom: 10px;
+        height: 220px;
+    }
+    .showImageCard {
+        margin-bottom: 10px;
+    }
+    .showDescriptionCard {
+        margin-bottom: 10px;
+        padding:0px 5px 0px 5px;
+        line-height: 22px;
+    }
+    .showCard {
+        margin-bottom: 10px;
+    }
+    .showTitle {
+        font-size: 1.8rem;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .showInfoCard {
+        margin-bottom: 20px;
+    }
+}
+
+/************************************************** styling for carousel in show page **************************************************/
+
+.carousel-control-next {
+    height: 3rem;
+    width: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;    
+    border-width: 0px;
+    border-radius: 50%;
+    background-color: rgb(112, 112, 112);
+}
+
+.carousel-control-prev {
+    height: 3rem;
+    width: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;    
+    border-width: 0px;
+    border-radius: 50%;
+    background-color: rgb(112, 112, 112);
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    opacity: 0.7;
+}
+
+.carousel-control-prev:focus, .carousel-control-next:focus {
+    opacity: 0.7;
+}
+
+.carousel-indicators button {
+    height: 12px;
+    width: 10px;
+    margin: 0px 7px 5px 7px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: #6c6a6e;
+    opacity: 0.6;
+}
+
+.carousel-indicators button:hover {
+    transition: 0.4s;
+    opacity: 0.6;
+    background: papayawhip;
+}
+
+.carousel-indicators button:active {
+    opacity: 0.8;
+    background: papayawhip;
+}

@@ -1,0 +1,123 @@
+<% layout('boilerplate') -%>
+<%- include('../partial/navBar.ejs') %> 
+
+<main class="container col-12 mt-5 pt-5"> 
+    <%- include('../partial/flash.ejs') %> 
+
+<h2 class="showTitle col-md-6 offset-md-3"><%= property.name %></h2>
+
+    <div class="row">
+        <div class="col-xl-6 offset-xl-1 col-md-12">
+            <div class="card showCard">
+                    <% if (property.images.length > 1) { %> 
+                        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval='false'>
+                            <div class="carousel-indicators">
+                                <% for (i=0; i<property.images.length; i++) { %> 
+                                    <% if (i == 0) { %> 
+                            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="<%= i %>" class="active" aria-current="true" ></button>
+                                <% } else { %> 
+                            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="<%= i %>" ></button>
+                                <% } %> 
+                                <% } %> 
+                            </div>
+                            <div class="carousel-inner">
+                                <% for(i=0; i<property.images.length; i++) { %> 
+                                <% if (i==0) { %>
+                                    <div class="carousel-item active">
+                                       <img src="<%= property.images[i].url %>" class="d-block w-100" alt="...">
+                                    </div>
+                                <% } else { %>
+                                    <div class="carousel-item">
+                                        <img src="<%= property.images[i].url %>" class="d-block w-100" alt="...">
+                                    </div>
+                                <% } %> 
+                                <% } %>
+                            </div>
+                            <div>
+                                <button class="carousel-control-prev border-0" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next border-0" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <% } %> 
+                    <% if (property.images.length == 1) { %> 
+                        <img src="<%= property.images[0].url %>" class="img-fluid rounded-start" alt="...">
+                        <% } %>  
+                    <% if (property.images.length == 0) { %> 
+                        <img src='https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:qv0jwyd8yuumcbqpedr4,w_830/v1635976186/Heng%20Thai/qv0jwyd8yuumcbqpedr4.jpg' class="img-fluid rounded-start" alt="...">
+                        <% } %>
+            </div>
+        </div>
+            <div class="col-xl-4 col-md-12">
+                <div class="row">
+                    <div class="col-xl-12 order-xl-0 col-md-6 order-md-1">
+                        <div class="card showMapCard">
+                            <div id="map" class="card-body"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 order-xl-1 col-md-6 order-md-0">
+                        <div class="card showDescriptionCard">
+                            <div class="card-body">
+                                <h4 class="card-title">Project Description</h4>
+                                <p class="card-text"><%= property.description %></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="card showInfoCard col-xl-10 offset-xl-1 col-md-12">
+        <div class="card-body py-0">
+            <h4 class="card-title">General Information</h4>
+            <ul class="list-group list-group-flush">
+                <div class="row">
+                    <div class="col-md-4 pr-md-0">
+                        <li class="list-group-item">Property Status: <%= property.status %></li>
+                    </div>
+                    <div class="col-md-4 px-md-0">
+                        <li class="list-group-item">Location: <%= property.location %> </li>
+                    </div>
+                    <div class="col-md-4 pl-md-0">
+                        <li class="list-group-item">Property Type: <%= property.propertyType %></li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 pr-md-0">
+                        <li class="list-group-item">Year of Completion: <%= property.year %></li>
+                    </div>
+                    <div class="col-md-4 px-md-0">
+                        <li class="list-group-item">No. of Units: <%= property.units %></li>    
+                    </div>
+                    <div class="col-md-4 pl-md-0">
+                        <li class="list-group-item logo"><img src="/images/Bedroom.png" class="showBedroomLogo" alt=""> <%= property.bedroom %> &nbsp &nbsp &nbsp &nbsp / &nbsp &nbsp &nbsp &nbsp <img src="/images/Bathroom.png" class="showBathroomLogo" alt=""> <%= property.bathroom %></li>    
+                    </div>
+                </div>
+            </ul>
+            <div class="userButtons">
+                <button type="button" class="btn btn-primary"><a href="javascript: history.go(-1)" class=" text-decoration-none text-reset">Go Back</a></button>
+                <% if (property.user.equals(currentUser)) { %> 
+                    <button type="button" class="btn btn-info"><a href="/properties/<%= property._id %>/edit" class=" text-decoration-none text-reset">Edit</a></button>
+                    <form class="d-inline" action="/properties/<%= property._id %>?_method=DELETE" method="POST">
+                        <button class="btn btn-danger">Delete</button>
+                    </form>
+                <% } %> 
+            </div>
+        </div>
+    </div>
+
+    
+        
+<script>
+    const mapToken = '<%- process.env.MAPBOX_TOKEN %>'
+    const property = <%- JSON.stringify(property) %>
+</script>
+
+<script type="text/javascript" src="/javascripts/showOneMap.js"></script>
+
+</main>
+
+<%- include('../partial/footer.ejs') %> 
+    

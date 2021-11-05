@@ -1,0 +1,15 @@
+<% if (success.length > 0) { %>
+    <div class="alert alert-success alert-dismissible" style="text-align: center"> <%= success %>
+    <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+<% } %>
+
+<% if (error.length > 0) { %>
+    <div class="alert alert-warning alert-dismissible" style="text-align: center"> <%= error %>
+    <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+<% } %>

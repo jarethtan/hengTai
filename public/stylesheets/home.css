@@ -1,0 +1,594 @@
+/************************************************** Styling for carousel in home page **************************************************/
+
+.homeCarousel .carousel-control-next {
+    height: 10%;
+    width: 5%;
+    top: 94.9%;
+    transform: translateY(-50%);
+    right: 45%;    
+    border-radius: 0%;
+    opacity: 1;
+    background-color:  rgb(211, 47, 47);
+    transition: ease-in-out 0.35s;
+}
+
+.homeCarousel .carousel-control-prev {
+    height: 10%;
+    width: 5%;
+    top: 94.9%;
+    transform: translateY(-50%);
+    left: 45.1%;    
+    border-radius: 0%;
+    opacity: 1;
+    background-color:  rgb(211, 47, 47);
+    transition: ease-in-out 0.35s;
+}
+
+.carousel-control-prev-icon {
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.homeCarousel .carousel-control-prev:hover, .homeCarousel .carousel-control-next:hover {
+    background-color: rgb(0, 71, 0);
+    opacity: 1;
+}
+
+.homeCarousel .carousel-control-prev:focus, .homeCarousel .carousel-control-next:focus {
+    opacity: 1;
+}
+
+/************************************************** Styling for home page **************************************************/
+
+.homeContainer {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.carouImage {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carouTextActive {
+    position:fixed;
+    height: 100vh;
+    width: 35vw;
+    padding:20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 0;
+    border: 0;
+    /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.carouTextActive .carouLogo {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    top: 2vh;
+    left: 12vw;
+    width: 28%;
+    height: 14%;
+}
+
+.carouTextActive .title {
+    position: relative;
+    font-family: 'Alumni Sans', sans-serif;
+    display: flex;
+    line-height: 50px;
+    justify-content: center;
+    width: 90%;
+    top: 5vh;
+    left: 2vw;
+    text-underline-offset: 8px;
+    text-decoration:rgb(211, 47, 47) underline;
+    letter-spacing: 2px;
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+
+.carouTextActive .slogan {
+    position: relative;
+    top: 6vh;
+    left: 2vw;
+    font-size: 1rem;
+    color: rgb(196, 194, 194);
+}
+
+.carouTextActive .subheader {
+    position: relative;
+    width: 90%;
+    top: 10vh;
+    left: 2vw;
+    line-height: 43px;
+    font-size: 1.5rem;
+    text-align: justify;
+    white-space: pre-wrap;
+}
+
+.carouTextActive .content {
+    position: relative;
+    width: 90%;
+    top: 14vh;
+    left: 2vw;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: rgb(184, 193, 204);
+    white-space: pre-wrap;
+    font-weight: 700;
+}
+
+.carouTextActive button {
+    position: relative;
+    top: 16vh;
+    left: 2vw;
+    width: 90%;
+    height: 10%;
+    border-radius: 80px;
+    border: none;
+    outline: none;
+    font-weight:600;
+    font-size: 1.7rem;
+    color: white;
+    background: rgb(0, 100, 0);
+    transition: transform 0.35s cubic-bezier(0.1, 0.2, 0.3, 0.4), ease-in-out 0.35s;
+}
+
+.carouTextActive button:hover {
+    background: rgb(211, 47, 47);
+    color: white;
+    transform: scale(1.07);
+}
+
+.carouTextActive .carouFooter {
+    position: relative;
+    left: 2vw;
+    top: 32vh;
+}
+
+.carouText {
+    position:fixed;
+    height: 100vh;
+    width: 35vw;
+    padding:20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 0;
+    border: 0;
+    /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.carouText .carouLogo {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    top: 2vh;
+    left: 12vw;
+    width: 28%;
+    height: 14%;
+}
+
+.carouText .title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    top: 6vh;
+    left: 2vw;
+    line-height: 50px;
+    text-underline-offset: 8px;
+    text-decoration:rgb(211, 47, 47) underline;
+    font-size: 2.2rem;
+}
+
+.carouText .subheader {
+    position: relative;
+    width: 90%;
+    top: 12vh;
+    left: 2vw;
+    text-align: justify;
+    font-size: 1.5rem;
+    white-space: pre-wrap;
+}
+
+.carouText .content {
+    position: relative;
+    width: 90%;
+    top: 16vh;
+    left: 2vw;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 40px;
+    color: rgb(184, 193, 204);
+    white-space: pre-wrap;
+}
+
+.carouText .carouFooter {
+    position: fixed;
+    left: 2vw;
+    bottom: 0vh;
+}
+
+.carouEdit {
+    position:absolute;
+    left: 1474px;
+    bottom: 4px;
+    height: 38px;
+    z-index: 1;
+}
+
+.carouCancelEdit {
+    position:absolute;
+    left: 163px;
+    padding: 5px 10px 5px 10px;
+    bottom: 23px;
+    z-index: 1;
+}
+
+.carouDelete {
+    position:absolute;
+    left: 92px;
+    padding: 5px 10px 5px 10px;
+    bottom: 38px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1400px) {
+    .carouTextActive .carouLogo {height: 10%;}
+    .carouText .carouLogo {height: 10%;}
+    .carouTextActive .title {font-size: 2.2rem;}
+    .carouTextActive button {top: 20vh;}
+    .carouTextActive .carouFooter {top: 47vh;}
+    .homeCarousel .carousel-control-next {
+        height: 8%;
+        top: 96.9%;
+    }   
+    .homeCarousel .carousel-control-prev {
+        height: 8%;
+        top: 96.9%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .carouImage {
+        height: 65vh;
+        width: 100%;
+    }
+    .carouTextActive {
+        height: 35vh;
+        width: 110vw    ;
+        bottom: 0vh;
+    }
+    .carouTextActive .carouLogo {
+        top: -0.5vh;
+        left: 43vw;
+        width: 12%;
+        height: 20%;
+    }   
+    .carouTextActive .title {
+        position: relative;
+        text-align: center;
+        line-height: 30px;
+        top: 1vh;
+        font-size: 2.2rem;
+    }
+    .carouTextActive .slogan {
+        top: 2vh;
+        left: 40vw;
+        font-size: 1rem;
+        color: rgb(196, 194, 194);
+    }
+    .carouTextActive .subheader {
+        top: 3vh;
+        left: 2vw;
+        padding: 0 60px 0 60px;
+        line-height: 30px;
+        font-size: 1.7rem;
+    }
+    .carouTextActive .content {
+        top: 4vh;
+        left: 39vw;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    .carouTextActive button {
+        top: 4vh;
+        left: 35vw;
+        width: 28%;
+        height: 12%;
+        font-weight:600;
+        font-size: 1.7rem;
+    }
+    .carouTextActive .carouFooter {
+        padding: 0 60px 0 60px;
+        top: 7vh;
+    }
+    .carouText {
+        height: 35vh;
+        width: 110vw    ;
+        bottom: 0vh;
+    }
+    .carouText .carouLogo {
+        top: 0;
+        left: 43vw;
+        width: 12%;
+        height: 20%;
+    }   
+    .carouText .title {
+        position: relative;
+        text-align: center;
+        line-height: 30px;
+        top: 1vh;
+        font-size: 2.2rem;
+    }
+    .carouText .subheader {
+        top: 4vh;
+        left: 2vw;
+        padding: 0 60px 0 60px;
+        line-height: 30px;
+        font-size: 1.7rem;
+    }
+    .carouText .content {
+        top: 6vh;
+        left: 2vw;
+        padding: 0 60px 0 60px;
+        font-size: 1.5rem;
+    }
+    .carouText .carouFooter {
+        padding: 0 60px 0 60px;
+        bottom: 0vh;
+    }
+    .homeCarousel .carousel-control-next {
+        height: 7.1%;
+        width: 7%;
+        top: 96.5%;
+        right: 43%;  
+    }
+    .homeCarousel .carousel-control-prev {
+        height: 7%;
+        width: 7%;
+        top: 96.4%;
+        left: 43%;  
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .carouTextActive .carouLogo {
+        left: 43vw;
+        width: 12%;
+        height: 19%;
+    }   
+    .carouTextActive .title {
+        font-size: 1.8rem;
+    }
+    .carouTextActive .slogan {
+        left: 36vw;
+    }
+    .carouTextActive .subheader {
+        top: 1vh;
+        padding: 0px 60px 0 60px;
+        font-size: 1.5rem;
+    }
+    .carouTextActive .content {
+        top: 1vh;
+        left: 37vw;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .carouTextActive button {
+        top: 0.5vh;
+        left: 33vw;
+        width: 30%;
+        height: 11%;
+        font-weight:600;
+        font-size: 1.5rem;
+    }
+    .carouTextActive .carouFooter {
+        top: 2vh;
+    }
+    .carouText .carouLogo {
+        top: -1vh;
+        left: 43vw;
+        width: 12%;
+        height: 19%;
+    }   
+    .carouText .title {
+        top: 0vh;
+        font-size: 1.8rem;
+    }
+    .carouText .subheader {
+        top: 2vh;
+        padding: 0px 60px 0 60px;
+        font-size: 1.5rem;
+    }
+    .carouText .content {
+        top: 4vh;
+        padding: 0px 60px 0 60px;
+        line-height: 25px;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .homeCarousel .carousel-control-next {
+        height: 7%;
+        top: 96.6%;
+    }
+    .homeCarousel .carousel-control-prev {
+        height: 7%;
+        top: 96.6%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .carouImage {
+        height: 55vh;
+        width: 100%;
+    }
+    .carouTextActive {
+        height: 45vh;
+        width: 110vw    ;
+        bottom: 0vh;
+    }
+    .carouTextActive .carouLogo {
+        top: -1vh;
+        left: 40vw;
+        width: 16%;
+        height: 12%;
+    }   
+    .carouTextActive .title {
+        position: relative;
+        text-align: center;
+        line-height: 30px;
+        top: 0vh;
+        left: 18px;
+        font-size: 1.5rem;
+    }
+    .carouTextActive .slogan {
+        position: relative;
+        left: 22vw;
+        top: 0vh;
+        font-size: 1rem;
+        color: rgb(196, 194, 194);
+    }
+    .carouTextActive .subheader {
+        position: relative;
+        top: 0vh;
+        padding: 0 10px 0 10px;
+        line-height: 25px;
+        font-size: 1.2rem;
+    }
+    .carouTextActive .content {
+        top: 0vh;
+        left: 28vw;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .carouTextActive button {
+        top: 0vh;
+        left: 24vw;
+        width: 50%;
+        height: 12%;
+        font-size: 1.3rem;
+    }
+    .carouTextActive .carouFooter {
+        padding: 0 10px 0 10px;
+        top: 4vh;
+    }
+    .carouText {
+        height: 45vh;
+        bottom: 0vh;
+    }
+    .carouText .carouLogo {
+        top: 0vh;
+        left: 41vw;
+        width: 15%;
+        height: 11%;
+    }   
+    .carouText .title {
+        top: 1vh;
+        font-size: 1.5rem;
+    }
+    .carouText .subheader {
+        top: 2vh;
+        padding: 0px 20px 0 20px;
+        font-size: 1.2rem;
+    }
+    .carouText .content {
+        top: 3vh;
+        padding: 0px 20px 0 20px;
+        line-height: 25px;
+        font-size: 1rem;
+    }
+    .carouText .carouFooter {
+        padding: 0 20px 0 20px;
+    }
+    .homeCarousel .carousel-control-next {
+        height: 7%;
+        right: 43.1%;
+        top: 96.6%;
+    }
+    .homeCarousel .carousel-control-prev {
+        height: 6.9%;
+        left: 43.1%;
+        top: 96.6%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .carouImage {
+        height: 50vh;
+        width: 100%;
+    }
+    .carouTextActive {
+        height: 50vh;
+        width: 110vw    ;
+        bottom: 0vh;
+    }
+    .carouTextActive .title {
+        font-size: 1.2rem;
+    }
+    .carouTextActive .slogan {
+        left: 20vw;
+        top: 0vh;
+    }
+    .carouTextActive .subheader {
+        top: -1vh;
+        line-height: 20px;
+        font-size: 1rem;
+    }
+    .carouTextActive .content {
+        top: -5vh;
+        left: 24vw;
+    }
+    .carouTextActive button {
+        top: -7vh;
+        height: 14%;
+        font-size: 1.2rem;
+    }
+    .carouTextActive .carouFooter {
+        padding: 0 10px 0 10px;
+        top: -5vh;
+    }
+    .carouText {
+        height: 50vh;
+    }
+    .carouText .carouLogo {
+        top: -2vh;
+        height: 12%;
+    }   
+    .carouText .title {
+        top: -2vh;
+        left: 5vw;
+        font-size: 1.5rem;
+    }
+    .carouText .subheader {
+        top: -2vh;
+        padding: 0px 10px 0 10px;
+        font-size: 1rem;
+    }
+    .carouText .content {
+        top: -2vh;
+        padding: 0px 10px 0 10px;
+        line-height: 16px;
+        font-size: 1rem;
+    }
+    .carouText .carouFooter {
+        padding: 0 20px 0 20px;
+    }
+    .homeCarousel .carousel-control-next {
+        height: 7%;
+        right: 43.1%;
+        top: 96.6%;
+    }
+    .homeCarousel .carousel-control-prev {
+        height: 6.9%;
+        left: 43.1%;
+        top: 96.6%;
+    }
+}

@@ -1,0 +1,75 @@
+<% layout('boilerplate') -%>
+<%- include('./partial/navBar.ejs') %> 
+<main class="container col-12 mt-5 p-0 contactUsPage"> 
+<%- include('./partial/flash.ejs') %>  
+
+<h1 class="contactTitle">Contact Us</h1>
+<div class="card contactMapCard">
+    <div id="map" class="card-body contactMap"></div>
+</div>
+<p class="contactMessage">Our local office is open between 8am - 5pm (Mon - Sat). Feel free to drop by or give us a call for any property development enquiries.</p>
+<div class="contactCard">
+    <div class="row col-md-10 offset-md-1">
+        <div class="col-md-4">
+            <button class="icon">
+                <span class="material-icons md-48">location_on</span>
+            </button>
+            <div>
+                <div class="card-header">
+                    ADDRESS
+                </div>
+                <div class="card-body">
+                    1, 1st Floor, <br>
+                    Heng Thai Property Centre, <br>
+                    Simpang 22, Jalan Dato Ratna, <br>
+                    Kg. Kiarong BE1318 BSB, <br>
+                    Negara Brunei Barussalam <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <button class="icon">
+                <span class="material-icons md-48">phone_in_talk</span>
+            </button>
+            <div>
+                <div class="card-header">
+                    PHONE
+                </div>
+                <div class="card-body">
+                    Tel: 673-2429111 <br>
+                    Tel: 673-2429222 <br>
+                    Tel: 673-2429333 <br>
+                    <br>
+                    Fax: 673-2429555 <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <button class="icon">
+                <span class="material-icons md-48">contact_mail</span>
+            </button>
+            <div>
+                <div class="card-header">
+                    EMAIL
+                </div>
+                <div class="card-body">
+                    Email: ht.hengthai@gmail.com <br>
+                    Email: ht.irene6363@gmail.com <br>
+                    Email: ht.junlai279@gmail.com <br>
+                    <br>
+                    Mail: P.O Box Seri Complex BA1779 BSB
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>    
+    const mapToken = '<%- process.env.MAPBOX_TOKEN %>'
+</script>
+
+<script type="text/javascript" src="/javascripts/showHTMap.js"></script>
+
+</main>
+
+<%- include('./partial/footer.ejs') %> 
