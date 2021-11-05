@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-8 mb-3">
                         <label for="location" class="form-label">Location</label> <br>
                         <input type="text" name="location" class="form-control shadow-sm" id="location" value="<%= property.location %>" required>
                         <div class="valid-feedback">
@@ -51,17 +51,17 @@
                             Please provide an address
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
+                    <div class="col-lg-2 col-6 mb-3">
                         <label for="lng" class="form-label">Longtitude</label>
                         <input type="text" name="lng" class="form-control shadow-sm" id="lng" value="<%= property.lng %>">
                     </div>
-                    <div class="col-md-3 mb-3">
+                    <div class="col-lg-2 col-6 mb-3">
                         <label for="lat" class="form-label">Latitude</label>
                         <input type="text" name="lat" class="form-control shadow-sm" id="lat" value="<%= property.lat %>">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 mb-3";>
+                    <div class="col-lg-8 mb-3";>
                         <label for="status" class="form-label selector-label">Status</label><br>
                         <select class="form-select selector-dropdown-1 shadow-sm" name="status" aria-label="Default select" id="status" required>
                             <option value="Completed" <%= property.status === "Completed" ? 'selected' : '' %>>Completed</option>
@@ -74,7 +74,7 @@
                             Please provide property status.
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6 mb-3">
+                    <div class="col-lg-2 col-6 mb-3">
                         <label for="bedroom" class="form-label">Bdrms</label>
                         <input type="text" name="bedroom" class="form-control bdrm-btrm shadow-sm" id="bedroom" value="<%= property.bedroom %>" required>
                         <div class="valid-feedback">
@@ -84,7 +84,7 @@
                             Please provide no. of bedrooms
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6 mb-3">
+                    <div class="col-lg-2 col-6 mb-3">
                         <label for="bathroom" class="form-label">Bthrms</label>
                         <input type="text" name="bathroom" class="form-control bdrm-btrm shadow-sm" id="bathroom" value="<%= property.bathroom %>" required>
                         <div class="valid-feedback">

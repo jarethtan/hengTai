@@ -141,6 +141,30 @@ body::-webkit-scrollbar-thumb:active {
     }
 }
 
+/************************************************** login form styling **************************************************/
+
+.loginForm {
+    height: 86vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .loginForm {
+        height: 92vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .loginForm {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .loginForm {
+        height: 84vh;
+    }
+}
+
 /************************************************** Footer styling **************************************************/
 
 .footer {

@@ -155,7 +155,6 @@
 /************************************************** Edit/New page styling **************************************************/
 
 .bdrm-btrm {
-    width: 60%;
     text-align: center;
 }
 
@@ -173,7 +172,7 @@
     position:relative;
     height: 33px;
     border-radius: 6px;
-    width: 250px;
+    width: 340px;
     outline: none;
     border: 2px solid rgb(173, 173, 173); 
 }
@@ -195,7 +194,7 @@
         height: 100vh;
     }
     .selector-dropdown-1 {
-        width: 205px;
+        width: 280px;
     }
     .selector-dropdown-2 {
         width: 200px;
