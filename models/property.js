@@ -46,6 +46,12 @@ const propertySchema = new mongoose.Schema({
         url: String,
         filename: String
     }],
+    lat: {
+        type: String
+    },
+    lng: {
+        type: String
+    },
     geometry: {
         type: {
             type: String,

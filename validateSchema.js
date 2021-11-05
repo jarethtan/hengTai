@@ -1,4 +1,3 @@
-const { string } = require('joi')
 const baseJoi = require('joi')
 const sanitizeHtml = require('sanitize-html')
 
@@ -48,6 +47,12 @@ module.exports.propertySchema = Joi.object({
             .min(3)
             .max(50)
             .required()
+            .escapeHTML(),
+        lat: Joi.string()
+            .allow(null, "")
+            .escapeHTML(),
+        lng: Joi.string()
+            .allow(null, "")
             .escapeHTML(),
         description: Joi.string()
             .required()

@@ -30,6 +30,8 @@ const seedDB = async () => {
                 url: hengThai.propertyInfo[i].images.url,
                 filename: hengThai.propertyInfo[i].images.filename,
             }],
+            lng: hengThai.propertyInfo[i].geometry.lng,
+            lat: hengThai.propertyInfo[i].geometry.lat,
             geometry: {
                 type: 'Point',
                 coordinates: [hengThai.propertyInfo[i].geometry.lng,hengThai.propertyInfo[i].geometry.lat]

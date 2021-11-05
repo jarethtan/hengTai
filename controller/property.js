@@ -38,12 +38,17 @@ module.exports.newPropertyForm = (req,res) => {
 }
 
 module.exports.createNewProperty = async(req,res) => {
+    const property = new Property(req.body)
     const data = await geocode.forwardGeocode({
         query: req.body.location,
         limit: 2
     }).send()
-    const property = new Property(req.body)
     property.geometry = data.body.features[0].geometry
+    if (req.body.lng && req.body.lat) {
+        property.lat = req.body.lat
+        property.lng = req.body.lng
+        property.geometry.coordinates = [req.body.lng,req.body.lat]
+    }
     property.user = req.user._id
     property.images = req.files.map(i => ({url: i.path, filename: i.filename}))
     showImageTransform(property)
@@ -73,13 +78,17 @@ module.exports.propertyEditForm = async(req,res) => {
 
 module.exports.updateProperty = async(req,res) => {
     const property = await Property.findByIdAndUpdate(req.params.id, req.body)
-    if (property.location !== req.body.location) { // This logic is required because brunei landmarks are not comprehensive in mapbox. In HT seed file, i am required to hard code the location coordinates together with the location description. However when i update a property, forward geocode will only take my location description and change my property location into another part of the world which fits that location description. it will ignore the hard coded coordinates. With this logic, it will compare the location description in the seed file with the location description sent by the update form. if they are the same, it will ignore updating the location via forward geocode. However if the description is different (means the user change the location), it will update the location via forward geocode.
     const data = await geocode.forwardGeocode({
         query: req.body.location,
         limit: 2
     }).send()
     property.geometry = data.body.features[0].geometry
-    } 
+    if (req.body.lng && req.body.lat) {
+        property.lat = req.body.lat
+        property.lng = req.body.lng
+        property.geometry.type = 'Point'
+        property.geometry.coordinates = [req.body.lng,req.body.lat]
+    }
     if ((property.images.length + req.files.length) > 4) {
         for (let h=0; h < req.files.length; h++) {
             await cloudinary.uploader.destroy(req.files[h].filename)
