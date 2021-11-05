@@ -109,9 +109,9 @@ module.exports.updateProperty = async(req,res) => {
 module.exports.deleteProperty = async(req,res) => {
     const property = await Property.findById(req.params.id)
     console.log(`deleting ${property.name} ...`)
-    // for (let i = 0; i < property.images.length; i++) {
-    //     await cloudinary.uploader.destroy(property.images[i].filename)
-    // }
+    for (let i = 0; i < property.images.length; i++) {
+        await cloudinary.uploader.destroy(property.images[i].filename)
+    }
     await property.deleteOne()
     console.log('Successfully deleted property')
     req.flash('success', 'Successfully deleted the property.')
