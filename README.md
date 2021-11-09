@@ -47,3 +47,5 @@ The project status is ready for deployment. The project have been deployed in He
 
 ## Setup
 Project have been launch in Heroku (http://stark-inlet-18272.herokuapp.com/home)
+Ensure to have node.js
+Run app.js in main folder
