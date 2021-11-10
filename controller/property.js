@@ -50,8 +50,8 @@ module.exports.createNewProperty = async(req,res) => {
         property.geometry.coordinates = [req.body.lng,req.body.lat]
     }
     property.user = req.user._id
-    property.images = req.files.map(i => ({url: i.path, filename: i.filename}))
-    showImageTransform(property)
+    addedImages = req.files.map(i => ({url: i.path, filename: i.filename}))
+    property.images = showImageTransform(addedImages)
     await property.save()
     console.log(`${property.name} is added in property list.`, property)
     req.flash('success', `Successfully added ${property.name} into Heng Thai project list.`)
