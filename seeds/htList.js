@@ -12,8 +12,8 @@ module.exports.propertyInfo = [
         bedroom:5,
         bathroom:4,
         images: {
-            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:qy6cz6ub4juse41rvjyi,w_830/v1635917469/Heng%20Thai/qy6cz6ub4juse41rvjyi.jpg',
-            filename: 'Heng Thai/qy6cz6ub4juse41rvjyi',
+            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:l6jotvdhmrurosas3c2p,w_830/v1636074571/Heng%20Thai/l6jotvdhmrurosas3c2p.jpg',
+            filename: 'Heng Thai/l6jotvdhmrurosas3c2p',
         },
         geometry: {
            lat:"4.95602364628456",
@@ -78,8 +78,8 @@ module.exports.propertyInfo = [
         bedroom:5,
         bathroom:4,
         images: {
-            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_465,o_75,w_700/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_465,l_Heng Thai:hwl3rm7vwntrdxiontmq,w_650/v1634546454/Heng%20Thai/hwl3rm7vwntrdxiontmq.jpg',
-            filename: 'Heng Thai/hwl3rm7vwntrdxiontmq',
+            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:qv0jwyd8yuumcbqpedr4,w_830/v1635976186/Heng%20Thai/qv0jwyd8yuumcbqpedr4.jpg',
+            filename: 'Heng Thai/qv0jwyd8yuumcbqpedr4',
         },
         geometry: {
            lat:"4.9570206716228675",
@@ -144,8 +144,8 @@ module.exports.propertyInfo = [
         bedroom:5,
         bathroom:4,
         images: {
-            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_465,o_75,w_700/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_465,l_Heng Thai:hwl3rm7vwntrdxiontmq,w_650/v1634546454/Heng%20Thai/hwl3rm7vwntrdxiontmq.jpg',
-            filename: 'Heng Thai/hwl3rm7vwntrdxiontmq',
+            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:qv0jwyd8yuumcbqpedr4,w_830/v1635976186/Heng%20Thai/qv0jwyd8yuumcbqpedr4.jpg',
+            filename: 'Heng Thai/qv0jwyd8yuumcbqpedr4',
         },
         geometry: {
            lat:"4.95602364628456",
@@ -651,8 +651,8 @@ module.exports.propertyInfo = [
         bedroom:5,
         bathroom:4,
         images: {
-            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_465,o_75,w_700/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_465,l_Heng Thai:hwl3rm7vwntrdxiontmq,w_650/v1634546454/Heng%20Thai/hwl3rm7vwntrdxiontmq.jpg',
-            filename: 'Heng Thai/hwl3rm7vwntrdxiontmq',
+            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:qv0jwyd8yuumcbqpedr4,w_830/v1635976186/Heng%20Thai/qv0jwyd8yuumcbqpedr4.jpg',
+            filename: 'Heng Thai/qv0jwyd8yuumcbqpedr4',
         },
         geometry: {
            lat:"4.8709883785037835",
@@ -959,8 +959,8 @@ module.exports.propertyInfo = [
         bedroom:5,
         bathroom:4,
         images: {
-            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_465,o_75,w_700/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_465,l_Heng Thai:hwl3rm7vwntrdxiontmq,w_650/v1634546454/Heng%20Thai/hwl3rm7vwntrdxiontmq.jpg',
-            filename: 'Heng Thai/hwl3rm7vwntrdxiontmq',
+            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:qv0jwyd8yuumcbqpedr4,w_830/v1635976186/Heng%20Thai/qv0jwyd8yuumcbqpedr4.jpg',
+            filename: 'Heng Thai/qv0jwyd8yuumcbqpedr4',
         },
         geometry: {
            lat:"4.894936145554639",
@@ -1003,8 +1003,8 @@ module.exports.propertyInfo = [
         bedroom:5,
         bathroom:4,
         images: {
-            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_465,o_75,w_700/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_465,l_Heng Thai:hwl3rm7vwntrdxiontmq,w_650/v1634546454/Heng%20Thai/hwl3rm7vwntrdxiontmq.jpg',
-            filename: 'Heng Thai/hwl3rm7vwntrdxiontmq',
+            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:qv0jwyd8yuumcbqpedr4,w_830/v1635976186/Heng%20Thai/qv0jwyd8yuumcbqpedr4.jpg',
+            filename: 'Heng Thai/qv0jwyd8yuumcbqpedr4',
         },
         geometry: {
            lat:"4.96991851296808",
@@ -1245,8 +1245,8 @@ module.exports.propertyInfo = [
         bedroom:4,
         bathroom:3,
         images: {
-            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_465,o_75,w_700/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_465,l_Heng Thai:hwl3rm7vwntrdxiontmq,w_650/v1634546454/Heng%20Thai/hwl3rm7vwntrdxiontmq.jpg',
-            filename: 'Heng Thai/hwl3rm7vwntrdxiontmq',
+            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:qv0jwyd8yuumcbqpedr4,w_830/v1635976186/Heng%20Thai/qv0jwyd8yuumcbqpedr4.jpg',
+            filename: 'Heng Thai/qv0jwyd8yuumcbqpedr4',
         },
         geometry: {
            lat:"4.969835202786727",
@@ -1377,8 +1377,8 @@ module.exports.propertyInfo = [
         bedroom:4,
         bathroom:4,
         images: {
-            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_465,o_75,w_700/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_465,l_Heng Thai:hwl3rm7vwntrdxiontmq,w_650/v1634546454/Heng%20Thai/hwl3rm7vwntrdxiontmq.jpg',
-            filename: 'Heng Thai/hwl3rm7vwntrdxiontmq',
+            url: 'https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:qv0jwyd8yuumcbqpedr4,w_830/v1635976186/Heng%20Thai/qv0jwyd8yuumcbqpedr4.jpg',
+            filename: 'Heng Thai/qv0jwyd8yuumcbqpedr4',
         },
         geometry: {
            lat:"4.8979764859753585",

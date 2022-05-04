@@ -1,313 +1,322 @@
 /************************************************** Index page styling **************************************************/
 
 .indexTitle {
-    font-family: 'Alumni Sans', sans-serif;
-    letter-spacing: 6px;
-    font-size: 5rem;
-    color: rgb(7, 78, 7);
-    font-weight: 600;
-    padding-bottom: 10px;
+  font-family: "Alumni Sans", sans-serif;
+  letter-spacing: 6px;
+  font-size: 5rem;
+  color: rgb(7, 78, 7);
+  font-weight: 600;
+  padding-bottom: 10px;
 }
 
 .indexCard {
-    margin: 0 30px 50px 30px;
-    border-radius: 10%;
-    transition: transform 0.35s cubic-bezier(0.1, 0.2, 0.3, 0.4), ease-in-out 0.35s;
+  margin: 0 30px 50px 30px;
+  border-radius: 10%;
+  transition: transform 0.35s cubic-bezier(0.1, 0.2, 0.3, 0.4),
+    ease-in-out 0.35s;
 }
 
 .indexCard:hover {
-    cursor: pointer;
-    background:  rgb(54, 99, 46);
-    transform: scale(1.05);
-    color: white;
+  cursor: pointer;
+  background: rgb(54, 99, 46);
+  transform: scale(1.05);
+  color: white;
 }
 
 .indexImg {
-    margin-top: 15px;
-    border-radius: 10%;
+  margin-top: 15px;
+  border-radius: 10%;
 }
 
 .indexMap {
-    height: 440px;
-    margin-bottom: 10px;
-    border-radius: 18px;
+  height: 440px;
+  margin-bottom: 10px;
+  border-radius: 18px;
 }
 
 .searchCard {
-    display: flex;
-    margin-bottom: 40px;
-    padding: 15px;
-    background-color: rgb(233, 228, 223);
-    border: none;
+  display: flex;
+  margin-bottom: 40px;
+  padding: 15px;
+  background-color: rgb(233, 228, 223);
+  border: none;
 }
 
 .searchCard .card {
-    background-color: rgb(233, 228, 223);
+  background-color: rgb(233, 228, 223);
 }
 
 .searchCard h5 {
-    padding: 0px 5px 0 5px;
-    margin-bottom: 0px;
+  padding: 0px 5px 0 5px;
+  margin-bottom: 0px;
 }
 
 .searchCard span {
-    float: right;
-    font-size: 1rem;
-    font-weight: normal;
+  float: right;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .searchCard .searchBar {
-    padding: 0px;
+  padding: 0px;
 }
 
 .searchCard .searchButton {
-    float: right;
-    margin: 10px 0px 0px 0px;
-    border-radius: 20px;
-    background-color: rgb(46, 125, 50);
-    border: rgb(46, 125, 50);
+  float: right;
+  margin: 10px 0px 0px 0px;
+  border-radius: 20px;
+  background-color: rgb(46, 125, 50);
+  border: rgb(46, 125, 50);
 }
 
 .searchCard .searchButton:hover {
-    background-color: rgb(33, 97, 38);
-    box-shadow: rgb(46, 125, 50);
+  background-color: rgb(33, 97, 38);
+  box-shadow: rgb(46, 125, 50);
 }
 
 .searchCard .searchButton:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .searchCard .searchButton:active {
-    background-color: rgb(33, 97, 38) !important;
-    box-shadow: none !important;
+  background-color: rgb(33, 97, 38) !important;
+  box-shadow: none !important;
 }
 
 .searchCard .searchField {
-    margin-top: 10px;
-    margin: 10px 0 0px 0px;
-    border-radius: 20px;
-    background-color: rgb(46, 125, 50);
-    border: rgb(46, 125, 50);
+  margin-top: 10px;
+  margin: 10px 0 0px 0px;
+  border-radius: 20px;
+  background-color: rgb(46, 125, 50);
+  border: rgb(46, 125, 50);
 }
 
 .searchCard .searchField:hover {
-    background-color: rgb(33, 97, 38);
-    box-shadow: rgb(46, 125, 50);
+  background-color: rgb(33, 97, 38);
+  box-shadow: rgb(46, 125, 50);
 }
 
 .searchCard .searchField:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .searchCard .searchField:active {
-    background-color: rgb(33, 97, 38) !important;
-    box-shadow: none !important;
+  background-color: rgb(33, 97, 38) !important;
+  box-shadow: none !important;
 }
 
-
 .searchCard .card-body {
-    border: none;
-    padding: 10px 0px 10px 0px;
+  border: none;
+  padding: 10px 0px 10px 0px;
 }
 
 .searchCard .checkBox {
-    float: right;
-    margin-top: 10px;
+  float: right;
+  margin-top: 10px;
 }
 
 .searchCard input {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 1100px) {
-    .indexCard {
-        margin: 0 30px 30px 30px;
-        border-radius: 8%;
-        min-width: 250px;
-    }
+  .indexCard {
+    margin: 0 30px 30px 30px;
+    border-radius: 8%;
+    min-width: 250px;
+  }
 }
 
 @media screen and (max-width: 770px) {
-    .indexMap{
-        height: 300px;
-        margin-bottom: 30px;
-    }
-    .indexCard {
-        margin: 0 30px 30px 30px;
-        border-radius: 8%;
-        min-width: 250px;
-    }
+  .indexMap {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .indexCard {
+    margin: 0 30px 30px 30px;
+    border-radius: 8%;
+    min-width: 250px;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .searchCard span {
-        display: none;
-    }
-    .searchCard .checkBox {
-        float: left;
-        margin-bottom: 10px;
-    }
-    .searchCard .card-body {
-        padding: 0px;
-    }
+  .searchCard span {
+    display: none;
+  }
+  .searchCard .checkBox {
+    float: left;
+    margin-bottom: 10px;
+  }
+  .searchCard .card-body {
+    padding: 0px;
+  }
 }
 
 /************************************************** Edit/New page styling **************************************************/
 
 .bdrm-btrm {
-    text-align: center;
+  text-align: center;
 }
 
 .form-control {
-    border: 2px solid rgb(173, 173, 173);
-    border-radius: 6px;
+  border: 2px solid rgb(173, 173, 173);
+  border-radius: 6px;
 }
 
-.form-control:hover, .selector-dropdown-1, .selector-dropdown-2:hover{
-    border-color:rgb(126, 125, 125);
-    transition: 0.3s;
+.form-control:hover,
+.selector-dropdown-1,
+.selector-dropdown-2:hover {
+  border-color: rgb(126, 125, 125);
+  transition: 0.3s;
 }
 
 .selector-dropdown-1 {
-    position:relative;
-    height: 33px;
-    border-radius: 6px;
-    width: 340px;
-    outline: none;
-    border: 2px solid rgb(173, 173, 173); 
+  position: relative;
+  height: 33px;
+  border-radius: 6px;
+  width: 340px;
+  outline: none;
+  border: 2px solid rgb(173, 173, 173);
 }
 
 .selector-dropdown-2 {
-    position:relative;
-    height: 33px;
-    border-radius: 6px;
-    width: 245px;
-    outline: none;
-    border: 2px solid rgb(173, 173, 173);
+  position: relative;
+  height: 33px;
+  border-radius: 6px;
+  width: 245px;
+  outline: none;
+  border: 2px solid rgb(173, 173, 173);
 }
 
 @media screen and (max-width: 1200px) {
-    .propNew {
-        height: 92.5vh;
-    }
-    .propEdit {
-        height: 100vh;
-    }
-    .selector-dropdown-1 {
-        width: 280px;
-    }
-    .selector-dropdown-2 {
-        width: 200px;
-    }
+  .propNew {
+    height: 92.5vh;
+  }
+  .propEdit {
+    height: 100vh;
+  }
+  .selector-dropdown-1 {
+    width: 280px;
+  }
+  .selector-dropdown-2 {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 980px) {
-    .propNew {
-        height: 100%;
-    }
-    .propEdit {
-        height: 100%;
-    }
-    .selector-dropdown-1 {
-        width: 313px;
-    }
-    .selector-dropdown-2 {
-        width: 313px;
-    }
+  .propNew {
+    height: 100%;
+  }
+  .propEdit {
+    height: 100%;
+  }
+  .selector-dropdown-1 {
+    width: 313px;
+  }
+  .selector-dropdown-2 {
+    width: 313px;
+  }
 }
 
 #image::file-selector-button {
-    border: 2px solid rgb(173, 173, 173);
-	color: #555555;
-	padding: 4px;
-	border-radius: 6px;
-	background-color: rgb(255, 255, 255);
-    color: black;
+  border: 2px solid rgb(173, 173, 173);
+  color: #555555;
+  padding: 4px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 #image::file-selector-button:hover {
-    border-color:rgb(126, 125, 125);
-	background-color: rgb(221, 221, 221);
-    transition: 0.3s;
+  border-color: rgb(126, 125, 125);
+  background-color: rgb(221, 221, 221);
+  transition: 0.3s;
 }
 
 #images::file-selector-button {
-    border: 2px solid rgb(173, 173, 173);
-	color: #555555;
-	padding: 4px;
-	border-radius: 6px;
-	background-color: rgb(255, 255, 255);
-    color: black;
+  border: 2px solid rgb(173, 173, 173);
+  color: #555555;
+  padding: 4px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 #images::file-selector-button:hover {
-    border-color:rgb(126, 125, 125);
-	background-color: rgb(221, 221, 221);
-    transition: 0.3s;
+  border-color: rgb(126, 125, 125);
+  background-color: rgb(221, 221, 221);
+  transition: 0.3s;
 }
 
 /************************************************** New Property page styling **************************************************/
 
 .propNewCard {
-    margin-bottom: 30px;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
-    border: none;    
+  margin-bottom: 30px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  border: none;
 }
 
 /************************************************** Edit Property page styling **************************************************/
 
 .propEditCard {
-    margin-bottom: 30px;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
-    border: none; 
+  margin-bottom: 30px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  border: none;
 }
 
 /************************************************** New Carousel page styling **************************************************/
 
 .carouNewCard {
-    margin-bottom: 30px;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
-    border: none;    
+  margin-bottom: 30px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  border: none;
 }
 
 /************************************************** Edit Carousel page styling **************************************************/
 
 .carouEditCard {
-    margin-bottom: 30px;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
-    border: none; 
+  margin-bottom: 30px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  border: none;
 }
 
 /************************************************** Styling for thumbnail in edit page **************************************************/
 
 .custom-control.image-checkbox {
-    position: relative;
-    padding-left: 0;
+  position: relative;
+  padding-left: 0;
 }
-  
-.custom-control.image-checkbox .custom-control-input:checked ~ .custom-control-label:after, .custom-control.image-checkbox .custom-control-input:checked ~ .custom-control-label:before {
-    opacity: 1;
+
+.custom-control.image-checkbox
+  .custom-control-input:checked
+  ~ .custom-control-label:after,
+.custom-control.image-checkbox
+  .custom-control-input:checked
+  ~ .custom-control-label:before {
+  opacity: 1;
 }
-  
+
 .custom-control.image-checkbox label {
-    cursor: pointer;
+  cursor: pointer;
 }
-  
+
 .custom-control.image-checkbox label:before {
-    border-color: #007bff;
-    background-color: #007bff;
+  border-color: #007bff;
+  background-color: #007bff;
 }
-  
-.custom-control.image-checkbox label:after, .custom-control.image-checkbox label:before {
-    transition: opacity .3s ease;
-    opacity: 0;
-    left: .25rem;
+
+.custom-control.image-checkbox label:after,
+.custom-control.image-checkbox label:before {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  left: 0.25rem;
 }
-  
-.custom-control.image-checkbox label:focus, .custom-control.image-checkbox label:hover {
-    opacity: .7;
+
+.custom-control.image-checkbox label:focus,
+.custom-control.image-checkbox label:hover {
+  opacity: 0.7;
 }
-  
+
 .custom-control.image-checkbox label img {
-    border-radius: 2.5px;
+  border-radius: 2.5px;
 }
