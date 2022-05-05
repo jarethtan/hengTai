@@ -28,7 +28,7 @@ const userRoutes = require("./routes/user");
 const carouselRoutes = require("./routes/carousel");
 
 const expressError = require("./utility/expressError");
-const mongodbUrl = process.env.DB_URL || "mongodb://localhost:27017/hengtai"; // this will change whether project is in development or production. for production add 'process.env.DB_URL' in front of || then it go to heroku weblink.
+const mongodbUrl = process.env.DB_URL; // this will change whether project is in development or production. for production add 'process.env.DB_URL' in front of || then it go to heroku weblink.
 
 mongoose.connect(mongodbUrl).catch((error) => console.log(error));
 
