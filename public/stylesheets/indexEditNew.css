@@ -10,17 +10,16 @@
 }
 
 .indexCard {
+  cursor: pointer;
   margin: 0 30px 50px 30px;
+  color: black;
   border-radius: 10%;
-  transition: transform 0.35s cubic-bezier(0.1, 0.2, 0.3, 0.4),
-    ease-in-out 0.35s;
+  transition: all ease-in-out 0.35s;
 }
 
 .indexCard:hover {
-  cursor: pointer;
   background: rgb(54, 99, 46);
   transform: scale(1.05);
-  color: white;
 }
 
 .indexImg {

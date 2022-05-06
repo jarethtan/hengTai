@@ -1,538 +1,553 @@
 /************************************************** timeline Styling **************************************************/
 
 .timelineHead {
-    width: 100vw;
-    height: 100vh;
-    color: rgb(27, 27, 27);
-    max-width: 100%;
-    overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  color: rgb(27, 27, 27);
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .timelineHead h1 {
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-family: 'Alumni Sans', sans-serif;
-    letter-spacing: 6px;
-    font-size: 4.5rem;
-    color: rgb(14, 75, 14);
-    font-weight: 600;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: "Alumni Sans", sans-serif;
+  letter-spacing: 6px;
+  font-size: 4.5rem;
+  color: rgb(14, 75, 14);
+  font-weight: 600;
 }
 
 .timelineHead .timelineIntro {
-    position: relative;
-    width: 60%;
-    margin: auto;
-    line-height: 35px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-align: justify;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
+  position: relative;
+  width: 60%;
+  margin: auto;
+  line-height: 35px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
 }
 
 .timelineHead .timelineIntro .card-body {
-    margin: 20px 0;
-    border: none;
-    border-radius: 10px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
 }
 
 .timelineHead .introImage img {
-    display: flex;
-    width: 40%;
-    margin: auto;
-    border-radius: 15px;
+  display: flex;
+  width: 40%;
+  margin: auto;
+  border-radius: 15px;
 }
 
 .timelineHead h5 {
-    text-align: center;
-    padding: 20px 0px;
-    font-size: 1.5rem;
-    color: rgb(14, 75, 14);
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 1.5rem;
+  color: rgb(14, 75, 14);
 }
 
 .spacing1 {
-    position: relative;
-    text-align: end;
-    height: 5vh;
-    width: 100vw;
-    overflow: hidden;
-    max-width: 100%;
-    box-shadow: 0 0 6px 6px rgb(236, 232, 210);
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  position: relative;
+  text-align: end;
+  height: 5vh;
+  width: 100vw;
+  overflow: hidden;
+  max-width: 100%;
+  box-shadow: 0 0 6px 6px rgb(236, 232, 210);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
 }
 
 .spacing2 {
-    position: relative;
-    height: 17vh;
-    width: 100vw;
-    overflow: hidden;
-    max-width: 100%;
-    box-shadow: 0 0 6px 6px rgb(236, 232, 210);
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  position: relative;
+  height: 17vh;
+  width: 100vw;
+  overflow: hidden;
+  max-width: 100%;
+  box-shadow: 0 0 6px 6px rgb(236, 232, 210);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
 }
 
 .spacing2.first {
-    padding-top: 16px;
-    box-shadow: 0 0 6px 6px rgb(236, 232, 210);
+  padding-top: 16px;
+  box-shadow: 0 0 6px 6px rgb(236, 232, 210);
 }
 
 .spacing2 h1 {
-    color: rgb(14, 75, 14);
-    border: 3px solid rgb(14, 75, 14);
-    border-radius: 20px;
-    width: fit-content;
-    margin: auto;
-    padding: 10px 40px;
+  color: rgb(14, 75, 14);
+  border: 3px solid rgb(14, 75, 14);
+  border-radius: 20px;
+  width: fit-content;
+  margin: auto;
+  padding: 10px 40px;
 }
 
 .timeSection.firstSection {
-    padding: 0;
-    margin: 0;
-    height: 78vh;
-    width: 100vw;
-    max-width: 100%;
-    overflow: hidden;
-    background-image: url("https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  height: 78vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  background-image: url("https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .timeSection.secondSection {
-    padding: 0;
-    margin: 0;
-    height: 78vh;
-    width: 100vw;
-    max-width: 100%;
-    overflow: hidden;
-    background-image: url('https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  height: 78vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  background-image: url("https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.timeline .secondSection .two { /* Section two offset align for div. it seems this section is misaligned compared to the other sections It does not follow 78vh. */
-    bottom: 94px;
+.timeline .secondSection .two {
+  /* Section two offset align for div. it seems this section is misaligned compared to the other sections It does not follow 78vh. */
+  bottom: 94px;
 }
 
 .timeSection.thirdSection {
-    padding: 0;
-    margin: 0;
-    height: 78vh;
-    width: 100vw;
-    max-width: 100%;
-    overflow: hidden;
-    background-image: url('https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  height: 78vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  background-image: url("https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .timeSection.fourthSection {
-    padding: 0;
-    margin: 0;
-    height: 78vh;
-    width: 100vw;
-    max-width: 100%;
-    overflow: hidden;
-    background-image: url('https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  height: 78vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  background-image: url("https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .timeSection.fifthSection {
-    padding: 0;
-    margin: 0;
-    height: 78vh;
-    width: 100vw;
-    max-width: 100%;
-    overflow: hidden;
-    background-image: url('https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  height: 78vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  background-image: url("https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .timeSection.sixthSection {
-    padding: 0;
-    margin: 0;
-    height: 78vh;
-    width: 100vw;
-    max-width: 100%;
-    overflow: hidden;
-    background-image: url('https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  height: 78vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  background-image: url("https://res.cloudinary.com/dplfqp7kf/image/upload/c_scale,e_redeye,h_750,o_60,q_100,w_1000/v1636069811/Heng%20Thai/kee98eeyoqfrlsc9q2rj.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .timeline ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .timeline ul li {
-    list-style-type: none;
-    position: relative;
-    width: 8px;
-    left: 50%;
-    padding-top: 150px;
-    height: 85vh;
-    background: rgb(236, 232, 210);
-    box-shadow: 0 0 2px 2px rgb(236, 232, 210);
+  list-style-type: none;
+  position: relative;
+  width: 8px;
+  left: 50%;
+  padding-top: 150px;
+  height: 85vh;
+  background: rgb(236, 232, 210);
+  box-shadow: 0 0 2px 2px rgb(236, 232, 210);
 }
 
-.timeline ul li::after { /* timeline ball alignment */
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 115px;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: inherit;    
-    z-index: 1;
+.timeline ul li::after {
+  /* timeline ball alignment */
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 115px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
 }
 
-.timeline ul li div { /* timeline div card alignment */
-    position: relative;
-    bottom: 94px;
-    width: 450px;
-    padding: 15px;
-    background: rgb(17, 92, 17);
-    color: white;
-    border-radius: 10px;
+.timeline ul li div {
+  /* timeline div card alignment */
+  position: absolute;
+  bottom: 7rem;
+  width: 450px;
+  padding: 15px;
+  background: rgb(17, 92, 17);
+  color: white;
+  border-radius: 10px;
 }
 
 .timeline ul li span {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-   
-.timeline ul li div::before { /* setting up general position of the bottom corner arrow in the div */
-    content: '';
-    position: absolute;
-    bottom: 7px;
-    width: 0;
-    height: 0;
-    border-style: solid;
+
+.timeline ul li div::before {
+  /* setting up general position of the bottom corner arrow in the div */
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
 
 .timeline ul section:nth-child(odd) div {
-    left: 45px;
+  left: 45px;
 }
 
-.timeline ul section:nth-child(odd) div::before { /* Styling the bottom corner arrow in the div */
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent rgb(17, 92, 17) transparent transparent;
+.timeline ul section:nth-child(odd) div::before {
+  /* Styling the bottom corner arrow in the div */
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent rgb(17, 92, 17) transparent transparent;
 }
 
 .timeline ul section:nth-child(even) div {
-    left: -489px;
-}
-   
-.timeline ul section:nth-child(even) div::before { /* Styling the bottom corner arrow in the div */
-    right: -15px;
-    border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent rgb(17, 92, 17);
+  left: -489px;
 }
 
-.timeline ul li::after { /* ball design before appearing. */
-    background-color: rgb(236, 232, 210);
-    box-shadow: 0 0 2px 2px rgb(236, 232, 210);
-    transition: background-color .5s ease-in-out;
+.timeline ul section:nth-child(even) div::before {
+  /* Styling the bottom corner arrow in the div */
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent rgb(17, 92, 17);
 }
-   
-.timeline ul li.in-view::after { /* ball design at appearing */
-    background-color: rgb(17, 92, 17);
-    box-shadow: 0 0 4px 4px rgb(19, 100, 19);
+
+.timeline ul li::after {
+  /* ball design before appearing. */
+  background-color: rgb(236, 232, 210);
+  box-shadow: 0 0 2px 2px rgb(236, 232, 210);
+  transition: background-color 0.5s ease-in-out;
 }
-   
-.timeline ul li div { 
-    visibility: hidden;
-    opacity: 0;
-    transition: all .5s ease-in-out;
+
+.timeline ul li.in-view::after {
+  /* ball design at appearing */
+  background-color: rgb(17, 92, 17);
+  box-shadow: 0 0 4px 4px rgb(19, 100, 19);
 }
-   
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
 .timeline ul li:nth-child(odd) div {
-    transform: translate3d(200px,0,0);
+  transform: translate3d(200px, 0, 0);
 }
-   
+
 .timeline ul li:nth-child(even) div {
-    transform: translate3d(-200px,0,0);
+  transform: translate3d(-200px, 0, 0);
 }
-   
+
 .timeline ul li.in-view div {
-    transform: none;
-    visibility: visible;
-    opacity: 1;
+  transform: none;
+  visibility: visible;
+  opacity: 1;
 }
 
 .timeline-infinite ul li::after {
-    animation: scaleAnimation 2s infinite;
+  animation: scaleAnimation 2s infinite;
 }
-   
+
 @keyframes scaleAnimation {
-    0% {
-      transform: translateX(-50%) scale(1)
-    }
-    50% {
-      transform: translateX(-50%) scale(1.5);
-    }
-    100% {
-      transform: translateX(-50%) scale(1);
-    }
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.5);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
 }
 
 @media screen and (max-width: 1100px) {
-    .timelineHead {
-        height: 70vh;
-    }
-    .timelineHead .timelineIntro {
-        width: 70%;
-        line-height: 35px;
-        font-size: 1.2rem;
-    }
-    .timelineHead .introImage img {
-        width: 60%;
-    }
-    .timelineHead h5 {
-        text-align: center;
-        padding: 100px 0px;
-        font-size: 1.5rem;
-    }
-    .spacing1 {
-        height: 2vh;
-    }
-    .spacing2 {
-        height: 8vh;
-    }
-    .spacing2.first {
-        padding-top: 5px;
-    }
-    .timeSection.firstSection {
-        height: 48vh;
-    }
-    .timeSection.secondSection {
-        height: 48vh;
-    }
-    .timeSection.thirdSection {
-        height: 48vh;
-    }
-    .timeSection.fourthSection {
-        height: 48vh;
-    }
-    .timeSection.fifthSection {
-        height: 48vh;
-    }
-    .timeSection.sixthSection {
-        height: 48vh;
-    }
-    .timeline .secondSection .two { /* Section two offset align for div. it seems this section is misaligned compared to the other sections It does not follow 78vh. */
-        bottom: 26px;
-    }
-    .timeline ul li div { /* timeline div card alignment */
-        bottom: 40px;
-        width: 350px;
-    }
-    .timeline ul li::after { /* timeline ball alignment */
-        bottom: 620px;
-    }
-    .timeline ul section:nth-child(even) div {
-        left: -389px;
-    }
-    .timeline ul li::after {
-        background-color: #fff;
-
-    }
-    .timeline ul li.in-view::after {
-        background-color: rgb(17, 92, 17);
-    }
-    .timeline ul li div {
-        visibility: visible;
-        opacity: 1;
-    }  
-    .timeline ul li:nth-child(odd) div {
-        transform: translate3d(0,0,0);
-    }   
-    .timeline ul li:nth-child(even) div {
-        transform: translate3d(0,0,0);
-    }      
+  .timelineHead {
+    height: 70vh;
+  }
+  .timelineHead .timelineIntro {
+    width: 70%;
+    line-height: 35px;
+    font-size: 1.2rem;
+  }
+  .timelineHead .introImage img {
+    width: 60%;
+  }
+  .timelineHead h5 {
+    text-align: center;
+    padding: 100px 0px;
+    font-size: 1.5rem;
+  }
+  .spacing1 {
+    height: 2vh;
+  }
+  .spacing2 {
+    height: 8vh;
+  }
+  .spacing2.first {
+    padding-top: 5px;
+  }
+  .timeSection.firstSection {
+    height: 48vh;
+  }
+  .timeSection.secondSection {
+    height: 48vh;
+  }
+  .timeSection.thirdSection {
+    height: 48vh;
+  }
+  .timeSection.fourthSection {
+    height: 48vh;
+  }
+  .timeSection.fifthSection {
+    height: 48vh;
+  }
+  .timeSection.sixthSection {
+    height: 48vh;
+  }
+  .timeline .secondSection .two {
+    /* Section two offset align for div. it seems this section is misaligned compared to the other sections It does not follow 78vh. */
+    bottom: 26px;
+  }
+  .timeline ul li div {
+    /* timeline div card alignment */
+    bottom: 40px;
+    width: 350px;
+  }
+  .timeline ul li::after {
+    /* timeline ball alignment */
+    bottom: 620px;
+  }
+  .timeline ul section:nth-child(even) div {
+    left: -389px;
+  }
+  .timeline ul li::after {
+    background-color: #fff;
+  }
+  .timeline ul li.in-view::after {
+    background-color: rgb(17, 92, 17);
+  }
+  .timeline ul li div {
+    visibility: visible;
+    opacity: 1;
+  }
+  .timeline ul li:nth-child(odd) div {
+    transform: translate3d(0, 0, 0);
+  }
+  .timeline ul li:nth-child(even) div {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .timelineHead {
-        height: 95vh;
-    }
-    .timelineHead .timelineIntro {
-        width: 70%;
-        line-height: 33px;
-        font-size: 1.2rem;
-    }
-    .timelineHead .introImage img {
-        width: 60%;
-    }
-    .timelineHead h5 {
-        text-align: center;
-        padding: 100px 0px;
-        font-size: 1.5rem;
-    }
-    .spacing1 {
-        height: 2vh;
-    }
-    .spacing2 {
-        height: 10vh;
-    }
-    .spacing2.first {
-        padding-top: 5px;
-    }
-    .timeSection.firstSection {
-        height: 48vh;
-    }
-    .timeSection.secondSection {
-        height: 48vh;
-    }
-    .timeSection.thirdSection {
-        height: 48vh;
-    }
-    .timeSection.fourthSection {
-        height: 48vh;
-    }
-    .timeSection.fifthSection {
-        height: 48vh;
-    }
-    .timeSection.sixthSection {
-        height: 48vh;
-    }
-    .timeline .secondSection .two { /* Section two offset align for div. it seems this section is misaligned compared to the other sections It does not follow 78vh. */
-        bottom: 101px;
-    }
-    .timeline ul li div { /* timeline div card alignment */
-        bottom: 120px;
-        width: 300px;
-    }
-    .timeline ul li::after { /* timeline ball alignment */
-        bottom: 420px;
-    }
-    .timeline ul section:nth-child(even) div {
-        left: -339px;
-    }
-    .timeline ul li::after {
-        background-color: #fff;
-
-    }
-    .timeline ul li.in-view::after {
-        background-color: rgb(17, 92, 17);
-    }
-    .timeline ul li div {
-        visibility: visible;
-        opacity: 1;
-    }  
-    .timeline ul li:nth-child(odd) div {
-        transform: translate3d(0,0,0);
-    }   
-    .timeline ul li:nth-child(even) div {
-        transform: translate3d(0,0,0);
-    }      
+  .timelineHead {
+    height: 95vh;
+  }
+  .timelineHead .timelineIntro {
+    width: 70%;
+    line-height: 33px;
+    font-size: 1.2rem;
+  }
+  .timelineHead .introImage img {
+    width: 60%;
+  }
+  .timelineHead h5 {
+    text-align: center;
+    padding: 100px 0px;
+    font-size: 1.5rem;
+  }
+  .spacing1 {
+    height: 2vh;
+  }
+  .spacing2 {
+    height: 10vh;
+  }
+  .spacing2.first {
+    padding-top: 5px;
+  }
+  .timeSection.firstSection {
+    height: 48vh;
+  }
+  .timeSection.secondSection {
+    height: 48vh;
+  }
+  .timeSection.thirdSection {
+    height: 48vh;
+  }
+  .timeSection.fourthSection {
+    height: 48vh;
+  }
+  .timeSection.fifthSection {
+    height: 48vh;
+  }
+  .timeSection.sixthSection {
+    height: 48vh;
+  }
+  .timeline .secondSection .two {
+    /* Section two offset align for div. it seems this section is misaligned compared to the other sections It does not follow 78vh. */
+    bottom: 101px;
+  }
+  .timeline ul li div {
+    /* timeline div card alignment */
+    bottom: 120px;
+    width: 300px;
+  }
+  .timeline ul li::after {
+    /* timeline ball alignment */
+    bottom: 420px;
+  }
+  .timeline ul section:nth-child(even) div {
+    left: -339px;
+  }
+  .timeline ul li::after {
+    background-color: #fff;
+  }
+  .timeline ul li.in-view::after {
+    background-color: rgb(17, 92, 17);
+  }
+  .timeline ul li div {
+    visibility: visible;
+    opacity: 1;
+  }
+  .timeline ul li:nth-child(odd) div {
+    transform: translate3d(0, 0, 0);
+  }
+  .timeline ul li:nth-child(even) div {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .timelineHead h1 {
-        padding-top: 10px;
-        font-size: 2rem;
-    }
-    .timelineHead {
-        height: 100vh;
-    }
-    .timelineHead .timelineIntro {
-        width: 90%;
-        line-height: 23px;
-        font-size: 1rem;
-    }
-    .timelineHead .introImage img {
-        width: 80%;
-    }
-    .timelineHead h5 {
-        text-align: center;
-        padding: 30px 0px;
-        font-size: 1rem;
-    }
-    .spacing1 {
-        height: 2vh;
-    }
-    .spacing2 {
-        height: 9vh;
-    }
-    .spacing2 h1 {
-        font-size: 1.6rem;
-        padding: 10px 20px;
-    }
-    .timeSection.firstSection {
-        height: 60vh;
-    }
-    .timeSection.secondSection {
-        height: 60vh;
-    }
-    .timeSection.thirdSection {
-        height: 60vh;
-    }
-    .timeSection.fourthSection {
-        height: 60vh;
-    }
-    .timeSection.fifthSection {
-        height: 60vh;
-    }
-    .timeSection.sixthSection {
-        height: 60vh;
-    }
-    .timeline .secondSection .two { /* Section two offset align for div. it seems this section is misaligned compared to the other sections It does not follow 78vh. */
-        bottom: 101px;
-    }
-    .timeline ul li {
-        width: 0px;
-    }
-    .timeline ul li div { /* timeline div card alignment */
-        bottom: 98px;
-        width: 300px;
-        font-size: 0.9rem;
-    }
-    .timeline ul li::after { /* timeline ball alignment */
-        bottom: 0;
-    }
-    .timeline ul section:nth-child(odd) div {
-        left: -150px
-    }
-    .timeline ul section:nth-child(even) div {
-        left: -150px
-    }
-    .timeline ul section:nth-child(even) div::before {
-        display: none;
-    }
-    .timeline ul section:nth-child(odd) div::before {
-        display: none;
-    }
-    .timeline ul li::after {
-        background-color: #fff;
-    }
-    .timeline ul li.in-view::after {
-        background-color: rgb(17, 92, 17);
-    }
-    .timeline ul li div {
-        visibility: visible;
-        opacity: 1;
-    }  
-    .timeline ul li:nth-child(odd) div {
-        transform: translate3d(0,0,0);
-    }   
-    .timeline ul li:nth-child(even) div {
-        transform: translate3d(0,0,0);
-    }      
+  .timelineHead h1 {
+    padding-top: 10px;
+    font-size: 2rem;
+  }
+  .timelineHead {
+    height: 100vh;
+  }
+  .timelineHead .timelineIntro {
+    width: 90%;
+    line-height: 23px;
+    font-size: 1rem;
+  }
+  .timelineHead .introImage img {
+    width: 80%;
+  }
+  .timelineHead h5 {
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 1rem;
+  }
+  .spacing1 {
+    height: 2vh;
+  }
+  .spacing2 {
+    height: 9vh;
+  }
+  .spacing2 h1 {
+    font-size: 1.6rem;
+    padding: 10px 20px;
+  }
+  .timeSection.firstSection {
+    height: 60vh;
+  }
+  .timeSection.secondSection {
+    height: 60vh;
+  }
+  .timeSection.thirdSection {
+    height: 60vh;
+  }
+  .timeSection.fourthSection {
+    height: 60vh;
+  }
+  .timeSection.fifthSection {
+    height: 60vh;
+  }
+  .timeSection.sixthSection {
+    height: 60vh;
+  }
+  .timeline .secondSection .two {
+    /* Section two offset align for div. it seems this section is misaligned compared to the other sections It does not follow 78vh. */
+    bottom: 101px;
+  }
+  .timeline ul li {
+    width: 0px;
+  }
+  .timeline ul li div {
+    /* timeline div card alignment */
+    bottom: 98px;
+    width: 300px;
+    font-size: 0.9rem;
+  }
+  .timeline ul li::after {
+    /* timeline ball alignment */
+    bottom: 0;
+  }
+  .timeline ul section:nth-child(odd) div {
+    left: -150px;
+  }
+  .timeline ul section:nth-child(even) div {
+    left: -150px;
+  }
+  .timeline ul section:nth-child(even) div::before {
+    display: none;
+  }
+  .timeline ul section:nth-child(odd) div::before {
+    display: none;
+  }
+  .timeline ul li::after {
+    background-color: #fff;
+  }
+  .timeline ul li.in-view::after {
+    background-color: rgb(17, 92, 17);
+  }
+  .timeline ul li div {
+    visibility: visible;
+    opacity: 1;
+  }
+  .timeline ul li:nth-child(odd) div {
+    transform: translate3d(0, 0, 0);
+  }
+  .timeline ul li:nth-child(even) div {
+    transform: translate3d(0, 0, 0);
+  }
 }

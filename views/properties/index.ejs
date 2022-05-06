@@ -61,7 +61,7 @@
                         <img src='https://res.cloudinary.com/dplfqp7kf/image/upload/c_fill,e_blur:1500,h_530,o_75,w_830/c_limit,co_rgb:5e5e5e,e_outline:outer:1:100,fl_no_overflow,h_530,l_Heng Thai:qv0jwyd8yuumcbqpedr4,w_830/v1635976186/Heng%20Thai/qv0jwyd8yuumcbqpedr4.jpg' class="img-fluid rounded-start indexImg" alt="...">
                         <% } %>
                       <div class="card-body p-2">
-                        <h5 class="card-title"> <%= i+1 %>. <%= properties[i].name %></h5>
+                        <h5 class="card-title"> <b><%= i+1 %>. <%= properties[i].name %></b></h5>
                         <p class="card-text mb-2"> Year Built: <%= properties[i].year %></p>
                         <p class="card-text mb-2"> Property Type: <%= properties[i].propertyType %></p>
                       </div>
@@ -86,8 +86,4 @@
 <script type="text/javascript" src="/javascripts/checkbox.js"></script> <%#  the number '2' in the js file checkbox stated matches the number of properties we want to search in the searchbar in this page. there are a total of 5 but the extra 1 uses text index from mongo to search. so it is not included in the array. %>
 
 </main>
-
-<%- include('../partial/footer.ejs') %> 
-
-
 

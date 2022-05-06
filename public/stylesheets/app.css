@@ -1,354 +1,365 @@
 body {
-    font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-family: 'Alumni Sans', sans-serif;
-    font-size: 3.8rem;
-    font-weight: 500;
-    color: rgb(3, 39, 3);
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: rgb(3, 39, 3);
 }
 
 body {
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  font-family: "Roboto Slab";
+  flex: 1;
 }
 
 /************************************************** Scrollbar styling **************************************************/
 
 body::-webkit-scrollbar {
-    width: 15px;           
+  width: 15px;
 }
 
 body::-webkit-scrollbar-track {
-    background: rgb(172, 177, 189);      
+  background: rgb(172, 177, 189);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(55, 122, 61);  
-    border-radius: 20px;       
-    border: 3px solid rgb(55, 122, 61);  
+  background-color: rgb(55, 122, 61);
+  border-radius: 20px;
+  border: 3px solid rgb(55, 122, 61);
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(42, 94, 46);  
-    border: 3px solid rgb(49, 110, 54);  
+  background-color: rgb(42, 94, 46);
+  border: 3px solid rgb(49, 110, 54);
 }
 
 body::-webkit-scrollbar-thumb:active {
-    background-color: rgb(41, 83, 44);  
-    border: 3px solid rgb(41, 83, 44);  
+  background-color: rgb(41, 83, 44);
+  border: 3px solid rgb(41, 83, 44);
 }
 
-::-webkit-scrollbar-button:single-button { /* general style for Up and down scroll button */
-    background-color: #c2d3c9;
-    display: block;
-    border-style: solid;
-    height: 14px;
-    width: 16px;
+::-webkit-scrollbar-button:single-button {
+  /* general style for Up and down scroll button */
+  background-color: #c2d3c9;
+  display: block;
+  border-style: solid;
+  height: 14px;
+  width: 16px;
 }
- 
-::-webkit-scrollbar-button:single-button:vertical:decrement {  /* Up arrow scroll button */
-    border-width: 0 8px 8px 8px;
-    border-color: transparent transparent #227243 transparent;
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  /* Up arrow scroll button */
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #227243 transparent;
 }
-  
+
 ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-    background-color: #aab1ad;
-    border-color: transparent transparent #1a5733 transparent;
+  background-color: #aab1ad;
+  border-color: transparent transparent #1a5733 transparent;
 }
 
-::-webkit-scrollbar-button:single-button:vertical:increment { /* down arrow scroll button */
-    border-width: 8px 8px 0 8px;
-    border-color: #227243 transparent transparent transparent;
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  /* down arrow scroll button */
+  border-width: 8px 8px 0 8px;
+  border-color: #227243 transparent transparent transparent;
 }
-  
+
 ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
-    background-color: #aab1ad;
-    border-color: #1a5733 transparent transparent transparent;
+  background-color: #aab1ad;
+  border-color: #1a5733 transparent transparent transparent;
 }
 
 /************************************************** Error styling **************************************************/
 
 .errorCard {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    padding: 0px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 0px;
 }
 
 /************************************************** Navbar styling **************************************************/
 
 .navbar {
-    background-color: rgb(210, 211, 210);
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
+  background-color: rgb(210, 211, 210);
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .navImage {
-    height: 38px;
-    width: 58px;
-    display: inline-block;
+  height: 38px;
+  width: 58px;
+  display: inline-block;
 }
 
 .navbar-nav {
-    padding: 0px 20px;
+  padding: 0px 20px;
 }
 
 .navName {
-    position: relative;
-    line-height: 40px;
-    font-size: 1.5rem;
-    color: rgb(2, 82, 2);
+  position: relative;
+  line-height: 40px;
+  font-size: 1.5rem;
+  color: rgb(2, 82, 2);
 }
 
 .navName:hover {
-    color: rgb(18, 100, 12);
+  color: rgb(18, 100, 12);
 }
 
 .nav-link:hover {
-    transform: scale(1.05);
-    text-decoration:underline 3px rgb(18, 100, 12);
-    text-underline-offset: 5px;
-    transition: ease-in-out 0.2s;
+  transform: scale(1.05);
+  text-decoration: underline 3px rgb(18, 100, 12);
+  text-underline-offset: 5px;
+  transition: ease-in-out 0.2s;
 }
 
 .dropdown-menu {
-    background-color: rgb(206, 209, 207);
+  background-color: rgb(206, 209, 207);
 }
 
 .dropdown-item {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: rgb(219, 206, 219);
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(219, 206, 219);
 }
 
 @media screen and (max-width: 1200px) {
-    .navImage {
-        margin-left: 15px;
-    }    
-    .nav-link:hover {
-        transform: scale(1);
-        transition: ease-in-out 0.2s;
-    }
+  .navImage {
+    margin-left: 15px;
+  }
+  .nav-link:hover {
+    transform: scale(1);
+    transition: ease-in-out 0.2s;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .navName {
-        display: none;
-    }
+  .navName {
+    display: none;
+  }
 }
 
 /************************************************** login form styling **************************************************/
 
 .loginForm {
-    height: 86vh;
+  height: 86vh;
 }
 
 @media screen and (max-width: 1200px) {
-    .loginForm {
-        height: 92vh;
-    }
+  .loginForm {
+    height: 92vh;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .loginForm {
-        height: 90vh;
-    }
+  .loginForm {
+    height: 90vh;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .loginForm {
-        height: 84vh;
-    }
+  .loginForm {
+    height: 84vh;
+  }
 }
 
 /************************************************** Footer styling **************************************************/
 
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 0;
-    background-color: rgb(210, 211, 210);
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  background-color: rgb(210, 211, 210);
+  align-items: center;
 }
 
 .footer .copyright {
-    justify-content: center;
-    color: rgb(116, 116, 116);
-    margin-bottom: 0;
+  justify-content: center;
+  color: rgb(116, 116, 116);
+  margin-bottom: 0;
 }
 
 .footer .footerHomeLink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(116, 116, 116);
-    margin-bottom: 0;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(116, 116, 116);
+  margin-bottom: 0;
+  text-decoration: none;
 }
 
 .footer .footerImage {
-    display: inline-block;
-    align-items: top;
-    width: 56px;
-    height: 42px;
+  display: inline-block;
+  align-items: top;
+  width: 56px;
+  height: 42px;
 }
 
 .footer .nav {
-    justify-content: center;
-    color: rgb(116, 116, 116);
+  justify-content: center;
+  color: rgb(116, 116, 116);
 }
 
 .footer .nav a {
-    color: rgb(116, 116, 116);
-    padding: 0 10px;    
+  color: rgb(116, 116, 116);
+  padding: 0 10px;
 }
 
 /************************************************** btnScrollUp button styling for index page **************************************************/
 
 #btnScrollUp {
-    position:fixed;
-    z-index: 10;
-    right: 20px;
-    bottom: 20px;
-    height: 58px;
-    width: 58px;
-    border-radius: 50%;
-    background: rgb(76, 110, 69);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
-    border-color:black;
-    color: white;
-    border: none;
-    outline:none;
-    cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  right: 20px;
+  bottom: 20px;
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background: rgb(76, 110, 69);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
+  border-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-#btnScrollUp:hover{
-    background: rgb(54, 85, 49);
-    transition: 0.2s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+#btnScrollUp:hover {
+  background: rgb(54, 85, 49);
+  transition: 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#btnScrollUp:hover:active{
-    background: rgb(34, 59, 28);
-    transition: 0.2s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+#btnScrollUp:hover:active {
+  background: rgb(34, 59, 28);
+  transition: 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.material-icons.md-48 { 
-    font-size: 48px; 
+.material-icons.md-48 {
+  font-size: 48px;
 }
 
 /************************************************** Styling for contact us page **************************************************/
 
 .contactUsPage {
-    height: 100%;
+  height: 100%;
 }
 
 .contactMapCard {
-    margin: auto;
-    height: 280px;
-    width: 90%;
-    border: 2px solid rgb(204, 209, 204); 
-    border-radius: 20px;
-    margin-bottom: 25px;
+  margin: auto;
+  height: 280px;
+  width: 90%;
+  border: 2px solid rgb(204, 209, 204);
+  border-radius: 20px;
+  margin-bottom: 25px;
 }
 
-.contactMap{
-    border-radius: 20px;
+.contactMap {
+  border-radius: 20px;
 }
 
 .contactMessage {
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 60px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .contactTitle {
-    padding: 30px 0 10px 0;
-    font-weight: 600;
-    color: rgb(14, 75, 14);
+  padding: 30px 0 10px 0;
+  font-weight: 600;
+  color: rgb(14, 75, 14);
 }
 
 .contactCard {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .contactCard .icon {
-    display: flex;
-    margin: auto;
-    margin-bottom: 30px;
-    border: none;
-    width: 90px;
-    height: 90px;
-    background-color: rgba(0, 0, 0, 0.0);
+  display: flex;
+  margin: auto;
+  margin-bottom: 30px;
+  border: none;
+  width: 90px;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.contactCard .material-icons.md-48 { 
-    font-size: 74px; 
+.contactCard .material-icons.md-48 {
+  font-size: 74px;
 }
 
 .contactCard .card-header {
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 500;
-    text-underline-offset: 5px;
-    text-decoration: underline rgb(18, 94, 18);
-    border: none;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-underline-offset: 5px;
+  text-decoration: underline rgb(18, 94, 18);
+  border: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
 }
 
 .contactCard .card-body {
-    line-height: 25px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 400;
-    border: none;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
+  line-height: 25px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 228, 223,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(203, 213, 224,1)'/%3E%3Cpath d='M-40 30.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40-9.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-40 70.5l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(254, 215, 215,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
 }
 
 @media screen and (max-width: 1100px) {
-    .contactUsPage {
-        height: 92.5vh;
-    }
-    .contactMessage {
-        width: 80%;
-        margin: auto;
-        margin-bottom: 100px;
-        text-justify:distribute-all-lines;
-    }
+  .contactUsPage {
+    height: 92.5vh;
+  }
+  .contactMessage {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    text-justify: distribute-all-lines;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .contactUsPage {
-        height: 100%;
-    }
-    .contactCard .card-header {
-        font-size: 1.8rem;
-   }
-   .contactCard .card-body {
+  .contactUsPage {
+    height: 100%;
+  }
+  .contactCard .card-header {
+    font-size: 1.8rem;
+  }
+  .contactCard .card-body {
     line-height: 25px;
     font-size: 1rem;
     font-weight: 400;
-    }
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .contactUsPage {
-        height: 100%;
-    }
-    .contactCard .card-body {
-        margin-bottom: 40px;
-    }
-    .contactCard .icon {
-        margin-bottom: 10px;
-    }
-    .contactMessage {
-        width: 70%;
-        font-size: 1.2rem;
-    }
+  .contactUsPage {
+    height: 100%;
+  }
+  .contactCard .card-body {
+    margin-bottom: 40px;
+  }
+  .contactCard .icon {
+    margin-bottom: 10px;
+  }
+  .contactMessage {
+    width: 70%;
+    font-size: 1.2rem;
+  }
 }

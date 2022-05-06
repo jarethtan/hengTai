@@ -1,46 +1,65 @@
-<% layout('boilerplate') -%>
-<%- include('../partial/navBar.ejs') %> 
+<% layout('boilerplate') -%> <%- include('../partial/navBar.ejs') %>
 
-<main class="container mt-5 pt-5"> 
-    <%- include('../partial/flash.ejs') %> 
+<main class="container mt-5 pt-5">
+  <%- include('../partial/flash.ejs') %>
 
-        <div>
-        <h1>New Carousel</h1>
-        <div class="card carouNewCard col-md-6 offset-md-3">
-            <form method="POST" novalidate class="validateForm carouNewForm" action="/home" enctype="multipart/form-data">
-                <div class="mb-3">
-                    <label for="title" class="form-label">Title of Carousel</label>
-                    <input type="text" name="title" class="form-control shadow-sm" id="title" placeholder="Title" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                    <div class="invalid-feedback">
-                        Please choose a Title.
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="subheader" class="form-label">Carousel Subheader</label>
-                    <textarea name="subheader" class="form-control shadow-sm" id="subheader" rows="3" placeholder="Carousel Subheader"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="content" class="form-label">Carousel Content</label>
-                    <textarea name="content" class="form-control shadow-sm" id="content" rows="5" placeholder="Carousel Description"></textarea>
-                </div>
-                <div class="mb-4">
-                    <label for="image" class="form-label">Choose Image</label>
-                    <input type="file" name="image" class="form-control-file" id="image">
-                </div>
-                <button type="submit" class="btn btn-primary mb-3">Submit</button>
-                <a class="btn btn-secondary mb-3" href="/properties" role="button">Cancel</a>
-            </form>
+  <div>
+    <h1>New Carousel</h1>
+    <div class="card carouNewCard col-md-6 offset-md-3">
+      <form
+        method="POST"
+        novalidate
+        class="validateForm carouNewForm"
+        action="/home"
+        enctype="multipart/form-data"
+      >
+        <div class="mb-3">
+          <label for="title" class="form-label">Title of Carousel</label>
+          <input
+            type="text"
+            name="title"
+            class="form-control shadow-sm"
+            id="title"
+            placeholder="Title"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please choose a Title.</div>
         </div>
+        <div class="mb-3">
+          <label for="subheader" class="form-label">Carousel Subheader</label>
+          <textarea
+            name="subheader"
+            class="form-control shadow-sm"
+            id="subheader"
+            rows="3"
+            placeholder="Carousel Subheader"
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="content" class="form-label">Carousel Content</label>
+          <textarea
+            name="content"
+            class="form-control shadow-sm"
+            id="content"
+            rows="5"
+            placeholder="Carousel Description"
+          ></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="image" class="form-label">Choose Image</label>
+          <input
+            type="file"
+            name="image"
+            class="form-control-file"
+            id="image"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+        <a class="btn btn-secondary mb-3" href="/properties" role="button"
+          >Cancel</a
+        >
+      </form>
     </div>
-
+  </div>
 </main>
-
-<%- include('../partial/footer.ejs') %> 
-
-
-
-
-
