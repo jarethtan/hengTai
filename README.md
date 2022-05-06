@@ -1,4 +1,4 @@
-# hengtai
+# Heng Thai
 A website for a residential property developer to archive past projects and display the company's informaton
 
 ## Table of Content
