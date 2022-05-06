@@ -21,7 +21,7 @@ The website key functions are as follows:
 4.  Search bar function to search for residential property in the archive.
 5.  A home page carousel with CRUD functionality to create new carousel to provide information on new development in the company.
 6.  A details page to display information of each individual residential property. 
-7.  Layout of webpage is configured to accomodate different devices from mobile to laptop.
+7.  Layout of webpage is responsive to accomodate different devices from mobile to laptop.
 8.  Input information validation
 
 ## Technologies
