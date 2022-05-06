@@ -1,5 +1,5 @@
 # Heng Thai
-A website for a residential property developer to archive past projects and display the company's informaton
+A website for a residential property developer to archive past projects and display the company's information
 
 ## Table of Content
 * [General Information](#general-information)
