@@ -1,4 +1,4 @@
-# hengtai
+# Heng Thai
 A website for a residential property developer to archive past projects and display the company's informaton
 
 ## Table of Content
@@ -11,12 +11,12 @@ A website for a residential property developer to archive past projects and disp
 
 ## General Information
 
-This website was created to store information and images of past residential development projects for a construction company using CRUD functionality. Besides providing a service to a client, creating this website enable the developer to practice HTML, CSS and JS skillset. Throughout the development process, technologies such as MongoDB, Express and various other packages have been utilise to meet the clients requirements. At completion, the project used close to 20 packages and took approximately 1.5 months to complete. 
+This website was created to store information and images of past residential development projects for a construction company using CRUD functionality. Besides providing a service to a client, creating this website enable the developer to practice HTML, CSS and JS skillset. Throughout the development process, technologies such as MongoDB, Express and various other packages have been utilise to meet the clients requirements. At completion, the project used close to 20 packages and took approximately 1.5 months to complete. For login details, please approach me and I will provide the access credentials to view the full CRUD functions the user have.
 
 ## Key Functions
 The website key functions are as follows:
 1.  User login, logout and register with authentication functionality.
-2.  CRUD finctionality for each residential property in the archive. Each property is a thumbnail in the index page and displayed as a point in a cluster map.
+2.  CRUD functionality for each residential property in the archive. Each property is a thumbnail in the index page and displayed as a point in a cluster map.
 3.  Image upload and display using cloudinary with image transformation and upload limit.
 4.  Search bar function to search for residential property in the archive.
 5.  A home page carousel with CRUD functionality to create new carousel to provide information on new development in the company.
@@ -53,7 +53,7 @@ The general idea of the project was to create a webpage to deposit information o
 5. The model folder consist of the property, user and carousel modelSchema used for mongoose. The model details what fields are required for each schema.
 6. Viewers can ignore the seeds folder. It is used during development to generate random properties to test webpage functionality.
 7. Utility folder consist the function for handling for async and non-async errors. Error handler can be found at the bottom of app.js file.
-8. Middleware folders consist of all the middleware being used in the route handler. Middlewares include input validation (property, user and carousel), login and authorisation.
+8. Middleware folders consist of all the middleware being used in the route handler. Middlewares include input validation (property, user and carousel), login and authorisation. For login details, please approach me and I will provide the access credentials for you to view the CRUD functions the user have.
 9. Public folder consists of the following:
   - All static images used in the project
   - JS files used for the project such as clustermap, validate form, eventselectors and etc.
