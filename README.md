@@ -11,7 +11,7 @@ A website for a residential property developer to archive past projects and disp
 
 ## General Information
 
-This website was created to store information and images of past residential development projects for a construction company using CRUD functionality. Besides providing a service to a client, creating this website enable the developer to practice HTML, CSS and JS skillset. Throughout the development process, technologies such as MongoDB, Express and various other packages have been utilise to meet the clients requirements. At completion, the project used close to 20 packages and took approximately 1.5 months to complete. For login details, please approach me and I will provide the access credentials to view the full CRUD functions the user have.
+This website was created to store information and images of past residential development projects for a construction company using CRUD functionality. Besides providing a service to the client, creating this website enabled the developer to be familised HTML, CSS and JS skillset. Throughout the development process, technologies such as MongoDB, Express and various other packages had been utilise to meet the clients requirements. At completion, the project used close to 20 packages and took approximately 1.5 months to complete. For login details, please approach me and I will provide the access credentials to view the full CRUD functions the user have.
 
 ## Key Functions
 The website key functions are as follows:
